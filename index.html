@@ -7,36 +7,83 @@
     <title>Filip Wieland</title>
 
     <!-- Bootstrap -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-  </head>
+
+      </head>
   <body>
     
     <div class="container">
-        <div class="thumbnail col-xs-12 col-md-4 col-lg-3 pull-right">
-            <img src="./img/face.jpg" alt="My Face. No, really." height="200" class="img-thumbnail"/>
-            <div class="caption">
-                <h3>Filip Wieland</h3>
-                <p><em>Coder, tinkerer, allegedly awesome</em></p>
-                <p>A young individual passionate about software development, methodic, reliable, and a quick learner.
-                Highly self-motivated, good team player and leader, rises to the challenge. Plans to study Computer Science at BSc level from 2015.</p>
-                <p><a href="#email" class="btn btn-primary" title="Solve a reCAPTCHA and shoot me an e-mail"><span class="glyphicon glyphicon-comment"></span> Email Me!</a>
-                <a href="https://www.google.com/+FilipLamparski" class="btn btn-gplus">+Filip</a>
-                
-                <a class="btn btn-primary" href="https://github.com/FLamparski">My Stuff</a></p>
+        <div class="row">
+            <div class="pull-right profile thumbnail">
+                <img src="./img/face.jpg" alt="My Face. No, really." height="200" class="img-responsive"/>
+                <div class="caption">
+                    <h3>Filip Wieland</h3>
+                    <p><em>Coder, tinkerer, allegedly awesome</em></p>
+                    <p>A young individual passionate about software development, methodic, reliable, and a quick learner.
+                    Highly self-motivated, good team player and leader, rises to the challenge. Plans to study Computer Science at BSc level from 2015.</p>
+                    <p><a href="#email" class="btn btn-primary" title="Solve a reCAPTCHA and shoot me an e-mail"><span class="fa fa-envelope"></span> Email</a>
+                    <a href="https://www.google.com/+FilipLamparski" class="btn btn-gplus"><span class="fa fa-google-plus"></span><span class="sr-only">My Google Plus profile</span></a>
+                    <a class="btn btn-default" href="https://github.com/FLamparski"><span class="fa fa-github"></span><span class="sr-only">My Git Hub repositories</span></a>
+                    <a class="btn btn-linkedin" href="http://uk.linkedin.com/pub/filip-wieland/78/20/991/"><span class="fa fa-linkedin"></span><span class="sr-only">My Linked In profile</span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="front-matter">
+                <h1>Hello, World!</h1>
+                <p class="lead">Nice to meet you, my name is Filip Wieland. I am an Android and Web developer.</p>
+                <p>I am currently doing A-Levels at <a href="http://www.ctksfc.ac.uk/site/aquinas">Christ the King: Aquinas</a>. I plan on going to
+                university to study Computer Science in 2015. Before that? Ideally I would like to work for a new tech startup to see just what
+                it's like.</p>
+                <h2>The Apps</h2>
+                <p>At the moment, I have one published Android app.</p>
+                <div class="application-box">
+                    <div class="thumbnail">
+                        <img src="//flamparski.github.io/areabase/images/areabase3-thumb.png" alt="Areabase screenshot">
+                    </div>
+                    <div class="caption">
+                        <h2>Areabase</h2>
+                        <p>
+    Everyone needs statistical geography for one reason or another. Moving houses? Check for crime data. Interested in demographics? Quickly glance at Areabase to see a brief description of the area you're in. It's as easy as that.
+                        </p>
+                        <p><a href="//flamparski.github.io/areabase" class="btn btn-dark btn-lg"><span class="fa fa-external-link"></span> Learn More</a>
+                        <a href="https://play.google.com/store/apps/details?id=lamparski.areabase">
+                            <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png">
+                        </a>
+                        </p>
+                    </div>
+                </div>
+                <p>I am also working on the following:</p>
+                <div class="application-box">
+                    <div class="thumbnail">
+                        <img src="./img/enlintel-screenshot.png" alt="Enlintel screenshot">
+                    </div>
+                    <div class="caption">
+                        <h2>Enlintel</h2>
+                        <p>Enlintel is a bespoke application for the London chapter of the <a href="https://en.wikipedia.org/wiki/Ingress_(game)">Ingress <span class="fa fa-external-link"></span></a> Enlightened. It uses CakePHP with a MySQL backend
+                        and Bootleaf frontend to allow us to go beyond what the Ingress Intel offers.</p>
+                        <p><small><strong>Note:</strong> As this is an Enlightened operation, Resistance agents are not welcome.</small></p>
+                        <p><a href="http://www.enlintel.com/" class="btn btn-dark btn-lg"><span class="fa fa-external-link"></span> Learn More</a></p>
+                    </div>
+                </div>
+                <div class="application-box">
+                    <div class="thumbnail">
+                        <img src="./img/tiledyn-screenshot.png" alt="Tiled Dynamic screenshot">
+                    </div>
+                    <div class="caption">
+                        <h2>A Tiled Dynamic experiment</h2>
+                        <p>This is a little experiment that I hope to develop into a full game later on. Magic! Technology! Final Fantasy 4 + dynamic 2D lighting!</p>
+                        <p><a href="https://github.com/FLamparski/tiled-dynamic" class="btn btn-dark btn-lg"><span class="fa fa-github"></span> View repository</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-8 col-lg-9 jumbotron">
-            <h1>Hello, world!</h1>
-            <p>This site is still a bit barren, so bear with me. In the meantime, why not check out <a href="//flamparski.github.io/areabase">Areabase</a>?</p>
-            <p>If you are interested, my full CV is <a href="https://docs.google.com/document/d/1seEx6BUM1MkgGlttGAcrAK_tqRlPUx6_xCFAGuavvwA/">here.</a></p>
+        <hr>
+        <div class="row">
+            <footer>Copyright &copy; 2014 Filip Wieland. <a href="https://github.com/FLamparski/FLamparski.github.io">See the source code.</a> <a href="https://docs.google.com/document/d/1seEx6BUM1MkgGlttGAcrAK_tqRlPUx6_xCFAGuavvwA/">Full CV.</a></footer>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

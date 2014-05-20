@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700|Roboto:100);
+
+$font-family-sans-serif: "Source Sans Pro", Ubuntu, Verdana, "Helvetica Neue", sans-serif;
+$font-family-monospace: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-size-base: 15px;
+
+$headings-font-family: Roboto, $font-family-sans-serif;
+$headings-font-weight: 100;
+
+$body-bg: #030303;
+$text-color: #ececec;
+
+$jumbotron-bg: lighten($body-bg, 10%);
+$jumbotron-color: #fff;
+
+$thumbnail-border: lighten($body-bg, 15%);
+
+@import "bootstrap";
+@import "font-awesome";
+.profile {
+    @include make-xs-column(12);
+    @include make-md-column(4);
+    @include make-lg-column(3);
+}
+
+.front-matter {
+    @include make-xs-column(12);
+    @include make-md-column(8);
+    @include make-lg-column(9);
+    h1 {
+        font-size: 64px;
+    }
+}
+
+.application-box {
+    @include make-row();
+    .thumbnail {
+        @include make-xs-column(12);
+        @include make-md-column(4);
+    }
+    .caption {
+        @include make-xs-column(12);
+        @include make-md-column(8);
+    }
+}
+
+hr { border-color: $thumbnail-border; }
+
+footer {
+    text-align: center;
+    font-size: smaller;
+}
+
+.btn-gplus {
+    @include button-variant(#fff, #dd4b39, darken(#dd4b39, 10%));
+}
+
+.btn-linkedin {
+    @include button-variant(#fff, #069, darken(#069, 10%));
+}
+
+.btn-dark {
+    @include button-variant(#fff, lighten($body-bg, 15%),
+        lighten($body-bg, 5%));
+}
+
+body {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+em {
+    font-style: italic;
+}
