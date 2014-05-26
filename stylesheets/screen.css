@@ -10472,7 +10472,7 @@ button.close {
   content: "\f1e2";
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .profile {
   position: relative;
   float: left;
@@ -10490,21 +10490,21 @@ button.close {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  /* line 26, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   .profile {
     float: left;
     width: 33.3333333333%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 26, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   .profile {
     float: left;
     width: 25%;
   }
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .front-matter {
   position: relative;
   float: left;
@@ -10522,25 +10522,25 @@ button.close {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  /* line 32, ../sass/screen.scss */
+  /* line 46, ../sass/screen.scss */
   .front-matter {
     float: left;
     width: 66.6666666667%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 32, ../sass/screen.scss */
+  /* line 46, ../sass/screen.scss */
   .front-matter {
     float: left;
     width: 75%;
   }
 }
-/* line 36, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .front-matter h1 {
   font-size: 64px;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .application-box {
   margin-left: -15px;
   margin-right: -15px;
@@ -10554,7 +10554,7 @@ button.close {
 .application-box:after {
   clear: both;
 }
-/* line 43, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .application-box .thumbnail {
   position: relative;
   float: left;
@@ -10568,13 +10568,13 @@ button.close {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  /* line 43, ../sass/screen.scss */
+  /* line 57, ../sass/screen.scss */
   .application-box .thumbnail {
     float: left;
     width: 33.3333333333%;
   }
 }
-/* line 47, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .application-box .caption {
   position: relative;
   float: left;
@@ -10588,25 +10588,25 @@ button.close {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  /* line 47, ../sass/screen.scss */
+  /* line 61, ../sass/screen.scss */
   .application-box .caption {
     float: left;
     width: 66.6666666667%;
   }
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 hr {
   border-color: #292929;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 footer {
   text-align: center;
   font-size: smaller;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .btn-gplus {
   color: white;
   background-color: #dd4b39;
@@ -10633,7 +10633,7 @@ footer {
   background-color: white;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .btn-linkedin {
   color: white;
   background-color: #006699;
@@ -10660,7 +10660,7 @@ footer {
   background-color: white;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .btn-dark {
   color: white;
   background-color: #292929;
@@ -10687,13 +10687,161 @@ footer {
   background-color: white;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 body {
   padding-top: 100px;
   margin-bottom: 50px;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 em {
   font-style: italic;
+}
+
+/* line 96, ../sass/screen.scss */
+nav#sections-nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 96, ../sass/screen.scss */
+  nav#sections-nav {
+    float: left;
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 96, ../sass/screen.scss */
+  nav#sections-nav {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 100, ../sass/screen.scss */
+nav#sections-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 103, ../sass/screen.scss */
+nav#sections-nav ul > li > a {
+  display: block;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 39.5px;
+  background-position: 0 100%;
+  -webkit-transition: background-position 200ms;
+  -o-transition: background-position 200ms;
+  transition: background-position 200ms;
+}
+/* line 117, ../sass/screen.scss */
+nav#sections-nav ul > li > a:hover, nav#sections-nav ul > li > a:active {
+  background-position: 0 0;
+  text-decoration: none;
+  -webkit-transition: background-position 200ms;
+  -o-transition: background-position 200ms;
+  transition: background-position 200ms;
+}
+/* line 122, ../sass/screen.scss */
+nav#sections-nav ul > li > a[href="#nice"] {
+  background-image: -webkit-linear-gradient(white, white 0.5, #d9d9d9);
+  background-image: -o-linear-gradient(white, white 0.5, #d9d9d9);
+  background-image: linear-gradient(#ffffff, #ffffff 50%, #d9d9d9);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFD9D9D9', GradientType=0);
+  background-size: 0 200%;
+  color: black;
+}
+/* line 125, ../sass/screen.scss */
+nav#sections-nav ul > li > a[href="#android"] {
+  background-image: -webkit-linear-gradient(#00b524, #00b524 0.5, #006915);
+  background-image: -o-linear-gradient(#00b524, #00b524 0.5, #006915);
+  background-image: linear-gradient(#00b524, #00b524 50%, #006915);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00B524', endColorstr='#FF006915', GradientType=0);
+  background-size: 0 200%;
+  color: white;
+}
+/* line 128, ../sass/screen.scss */
+nav#sections-nav ul > li > a[href="#javascript"] {
+  background-image: -webkit-linear-gradient(#eddd00, #eddd00 0.5, #a19600);
+  background-image: -o-linear-gradient(#eddd00, #eddd00 0.5, #a19600);
+  background-image: linear-gradient(#eddd00, #eddd00 50%, #a19600);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEDDD00', endColorstr='#FFA19600', GradientType=0);
+  background-size: 0 200%;
+  color: white;
+}
+
+/* line 135, ../sass/screen.scss */
+.scrolling {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 135, ../sass/screen.scss */
+  .scrolling {
+    float: left;
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 135, ../sass/screen.scss */
+  .scrolling {
+    float: left;
+    width: 75%;
+  }
+}
+/* line 139, ../sass/screen.scss */
+.scrolling h1, .scrolling h2, .scrolling h3, .scrolling h4, .scrolling h5, .scrolling h6 {
+  font-style: italic;
+  text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 150, ../sass/screen.scss */
+.scrolling section#nice {
+  background-image: -webkit-radial-gradient(circle, white, #d9d9d9);
+  background-image: radial-gradient(circle, #ffffff, #d9d9d9);
+  background-repeat: no-repeat;
+  color: black;
+  padding: 50px;
+}
+/* line 154, ../sass/screen.scss */
+.scrolling section#android {
+  background-image: -webkit-radial-gradient(circle, #00b524, #006915);
+  background-image: radial-gradient(circle, #00b524, #006915);
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px;
+}
+/* line 158, ../sass/screen.scss */
+.scrolling section#javascript {
+  background-image: -webkit-radial-gradient(circle, #eddd00, #a19600);
+  background-image: radial-gradient(circle, #eddd00, #a19600);
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px;
 }

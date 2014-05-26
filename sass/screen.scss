@@ -21,7 +21,21 @@ $jumbotron-color: #fff;
 
 $thumbnail-border: lighten($body-bg, 15%);
 
+$color-nice-fg: #000;
+$color-nice-bg: #fff;
+$color-android-fg: #fff;
+$color-android-bg: #00B524;
+$color-javascript-fg: #fff;
+$color-javascript-bg: #eddd00;
+
 @import "bootstrap";
+
+@mixin gradient-secnav($color){
+    $_couter: darken($color, 15%);
+    @include gradient-vertical-three-colors($color, $color, 0.5, $_couter);
+    background-size: 0 200%;
+}
+
 @import "font-awesome";
 .profile {
     @include make-xs-column(12);
@@ -77,4 +91,71 @@ body {
 
 em {
     font-style: italic;
+}
+
+nav#sections-nav {
+    @include make-xs-column(12);
+    @include make-sm-column(4);
+    @include make-md-column(3);
+    ul {
+        list-style: none;
+        padding-left: 0;
+        > li > a {
+            @mixin brand-link($fg, $bg){
+                @include gradient-secnav($bg);
+                color: $fg;
+            } 
+
+            display: block;
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            padding-top: 50px - ($line-height-computed / 2);
+            background-position: 0 100%;
+            @include transition(background-position 200ms);
+            &:hover,
+            &:active {
+                background-position: 0 0;
+                text-decoration: none;
+                @include transition(background-position 200ms);
+            }
+            &[href="#nice"]{
+                @include brand-link($color-nice-fg, $color-nice-bg);
+            }
+            &[href="#android"]{
+                @include brand-link($color-android-fg, $color-android-bg);
+            }
+            &[href="#javascript"]{
+                @include brand-link($color-javascript-fg, $color-javascript-bg);
+            }
+        }
+    }
+}
+
+.scrolling {
+    @include make-xs-column(12);
+    @include make-sm-column(8);
+    @include make-md-column(9);
+    h1, h2, h3, h4, h5, h6 {
+        font-style: italic;
+        text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    @mixin section-def($bg, $fg) {
+        @include gradient-radial($bg, darken($bg, 15%));
+        color: $fg;
+        padding: 50px;
+    }
+
+    section#nice {
+        @include section-def(#fff, #000);
+    }
+
+    section#android {
+        @include section-def(#00B524, #fff);
+    }
+
+    section#javascript {
+        @include section-def(#eddd00, #fff);
+    }
 }
