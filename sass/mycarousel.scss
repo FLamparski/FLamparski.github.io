@@ -1,0 +1,85 @@
+// stuff goes here
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700|Roboto:100);
+
+$font-family-sans-serif: "Source Sans Pro", Ubuntu, Verdana, "Helvetica Neue", sans-serif;
+$font-family-monospace: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-size-base: 15px;
+
+$headings-font-family: Roboto, $font-family-sans-serif;
+$headings-font-weight: 100;
+
+$body-bg: #030303;
+$text-color: #ececec;
+
+$jumbotron-bg: lighten($body-bg, 10%);
+$jumbotron-color: #fff;
+
+$thumbnail-border: lighten($body-bg, 15%);
+
+$color-nice-fg: #000;
+$color-nice-bg: #fff;
+$color-android-fg: #fff;
+$color-android-bg: #00B524;
+$color-javascript-fg: #fff;
+$color-javascript-bg: #eddd00;
+$color-html5-bg: #f14a29;
+$color-python-bg: #2b5b84;
+
+@import "bootstrap";
+@import "font-awesome";
+
+$spinning-total-height: 3cm;
+$_s_font_size: 0.6 * $spinning-total-height;
+$_s_line_height: $_s_font_size;
+$_s_pad_top: $spinning-total-height / 2 - $_s_line_height / 2;
+
+.spinning {
+    @include make-xs-column(12);
+    position: absolute;
+    top: 0;
+    left: 0;
+    span {
+        font-variant: small-caps;
+        font-weight: 700;
+        font-size: $_s_font_size;
+        line-height: $_s_line_height;
+        text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.3);
+        text-align: right;
+        display: block;
+        width: 50%;
+        height: 3cm;
+        padding-top: $_s_pad_top;
+        padding-right: $_s_pad_top * 10;
+        color: white;
+
+        &.android{
+           @include gradient-horizontal(darken($color-android-bg, 20%), $color-android-bg); 
+        }
+        &.javascript{
+           @include gradient-horizontal(darken($color-javascript-bg, 20%), $color-javascript-bg);
+        }
+        &.html5{
+           @include gradient-horizontal(darken($color-html5-bg, 20%), $color-html5-bg);
+        }
+        &.python{
+           @include gradient-horizontal(darken($color-python-bg, 20%), $color-python-bg);
+        }
+    }
+
+    > .my-face {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        > img {
+            box-shadow: 0px 0px 100px 100px rgba(255, 255, 255, 0.5);
+            height: 2 * $spinning-total-height;
+
+        }
+    }
+
+    .more-button {
+        @include button-variant(#fff, lighten(black, 20%), black);
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+}
