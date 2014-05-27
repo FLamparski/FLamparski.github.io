@@ -10411,26 +10411,28 @@ button.close {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-/* line 41, ../sass/mycarousel.scss */
+/* line 38, ../sass/mycarousel.scss */
+.spinning > #spinCanvas {
+  width: 100%;
+  height: 100%;
+}
+/* line 43, ../sass/mycarousel.scss */
 .spinning span {
   font-variant: small-caps;
   font-weight: 700;
-  font-size: 1.8cm;
-  line-height: 1.8cm;
+  font-size: 76.8px;
+  line-height: 76.8px;
   text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.3);
   text-align: right;
   display: block;
   width: 50%;
   height: 3cm;
-  padding-top: 0.6cm;
-  padding-right: 6.0cm;
+  padding-top: 25.6px;
+  padding-right: 256px;
   color: white;
 }
-/* line 55, ../sass/mycarousel.scss */
+/* line 57, ../sass/mycarousel.scss */
 .spinning span.android {
   background-image: -webkit-linear-gradient(left, color-stop(#004f10 0%), color-stop(#00b524 100%));
   background-image: -o-linear-gradient(left, #004f10 0%, #00b524 100%);
@@ -10438,7 +10440,7 @@ button.close {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF004F10', endColorstr='#FF00B524', GradientType=1);
 }
-/* line 58, ../sass/mycarousel.scss */
+/* line 60, ../sass/mycarousel.scss */
 .spinning span.javascript {
   background-image: -webkit-linear-gradient(left, color-stop(#877e00 0%), color-stop(#eddd00 100%));
   background-image: -o-linear-gradient(left, #877e00 0%, #eddd00 100%);
@@ -10446,7 +10448,7 @@ button.close {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF877E00', endColorstr='#FFEDDD00', GradientType=1);
 }
-/* line 61, ../sass/mycarousel.scss */
+/* line 63, ../sass/mycarousel.scss */
 .spinning span.html5 {
   background-image: -webkit-linear-gradient(left, color-stop(#a9250b 0%), color-stop(#f14a29 100%));
   background-image: -o-linear-gradient(left, #a9250b 0%, #f14a29 100%);
@@ -10454,7 +10456,7 @@ button.close {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA9250B', endColorstr='#FFF14A29', GradientType=1);
 }
-/* line 64, ../sass/mycarousel.scss */
+/* line 66, ../sass/mycarousel.scss */
 .spinning span.python {
   background-image: -webkit-linear-gradient(left, color-stop(#122637 0%), color-stop(#2b5b84 100%));
   background-image: -o-linear-gradient(left, #122637 0%, #2b5b84 100%);
@@ -10462,24 +10464,40 @@ button.close {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF122637', endColorstr='#FF2B5B84', GradientType=1);
 }
-/* line 69, ../sass/mycarousel.scss */
+/* line 71, ../sass/mycarousel.scss */
 .spinning > .my-face {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-/* line 73, ../sass/mycarousel.scss */
+/* line 76, ../sass/mycarousel.scss */
 .spinning > .my-face > img {
-  box-shadow: 0px 0px 100px 100px rgba(255, 255, 255, 0.5);
-  height: 6cm;
+  box-shadow: 0px 0px 25px 25px rgba(255, 255, 255, 0.5);
+  height: 256px;
 }
-/* line 80, ../sass/mycarousel.scss */
+/* line 82, ../sass/mycarousel.scss */
+.spinning > .spinner-base {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 90, ../sass/mycarousel.scss */
 .spinning .more-button {
   color: white;
   background-color: #333333;
   border-color: black;
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+  -webkit-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  transform: translate(0, -5px);
 }
 /* line 15, ../../../../var/lib/gems/1.9.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .spinning .more-button:hover, .spinning .more-button:focus, .spinning .more-button:active, .spinning .more-button.active, .open > .spinning .more-button.dropdown-toggle {

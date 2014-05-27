@@ -28,16 +28,18 @@ $color-python-bg: #2b5b84;
 @import "bootstrap";
 @import "font-awesome";
 
-$spinning-total-height: 3cm;
+$spinning-total-height: 128px;
 $_s_font_size: 0.6 * $spinning-total-height;
 $_s_line_height: $_s_font_size;
 $_s_pad_top: $spinning-total-height / 2 - $_s_line_height / 2;
 
 .spinning {
     @include make-xs-column(12);
-    position: absolute;
-    top: 0;
-    left: 0;
+    > #spinCanvas {
+        width: 100%;
+        height: 100%;
+    }
+
     span {
         font-variant: small-caps;
         font-weight: 700;
@@ -70,16 +72,25 @@ $_s_pad_top: $spinning-total-height / 2 - $_s_line_height / 2;
         position: absolute;
         top: 50%;
         left: 50%;
+        @include translate(-50%, -50%);
         > img {
-            box-shadow: 0px 0px 100px 100px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 25px 25px rgba(255, 255, 255, 0.5);
             height: 2 * $spinning-total-height;
-
         }
+    }
+
+    > .spinner-base {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .more-button {
         @include button-variant(#fff, lighten(black, 20%), black);
         border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
+        @include translate(0, -5px);
     }
 }
