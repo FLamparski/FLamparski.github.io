@@ -4,57 +4,187 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700|Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Lora:400|Merriweather+Sans:300,700);
 
 $font-family-sans-serif: "Source Sans Pro", Ubuntu, Verdana, "Helvetica Neue", sans-serif;
 $font-family-monospace: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-size-base: 15px;
 
-$headings-font-family: Roboto, $font-family-sans-serif;
-$headings-font-weight: 100;
+$headings-font-family: 'Merriweather Sans';
+$headings-font-weight: 700;
 
-$body-bg: #030303;
-$text-color: #ececec;
-
-$jumbotron-bg: lighten($body-bg, 10%);
-$jumbotron-color: #fff;
-
-$thumbnail-border: lighten($body-bg, 15%);
+$brand-primary: #55240d;
 
 @import "bootstrap";
 @import "font-awesome";
-.profile {
-    @include make-xs-column(12);
-    @include make-md-column(4);
-    @include make-lg-column(3);
-}
 
-.front-matter {
-    @include make-xs-column(12);
-    @include make-md-column(8);
-    @include make-lg-column(9);
-    h1 {
-        font-size: 64px;
+// Links
+a {
+    color: $link-color;
+    text-decoration: none;
+    @include transition(0.5s);
+
+    &:hover,
+    &:active {
+        color: darken($link-color, 20%);
+        @include transition(0.2s);
     }
 }
 
-.application-box {
+// Master header and footer
+header.masthead {
     @include make-row();
-    .thumbnail {
+    margin-bottom: 5%;
+
+    > div {
         @include make-xs-column(12);
-        @include make-md-column(4);
-    }
-    .caption {
-        @include make-xs-column(12);
-        @include make-md-column(8);
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 5%;
+        
+        > h1 {
+            font-family: Lora, sans-serif;
+            font-size: 4.5em;
+            font-weight: 400;
+            letter-spacing: 3pt;
+            margin-bottom: 0px;
+
+            em {
+                font-variant: normal;
+                font-size: 1.2em;
+            }
+        }
+
+        > hr {
+            border-color: $text-color;
+            width: 70%;
+            margin-top: -5px;
+            margin-bottom: 0px;
+        }
+
+        > span {
+            font-family: 'Merriweather Sans';
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: 4pt;
+        }
     }
 }
 
-hr { border-color: $thumbnail-border; }
-
-footer {
+footer.sitefoot {
+    font-size: 0.8em;
     text-align: center;
-    font-size: smaller;
+
+    > hr { 
+        margin-bottom: 5px;
+    }
+}
+
+// Page content
+section {
+    @include make-row();
+
+    &.welcome {
+        margin-bottom: 20px;
+    }
+
+    article {
+        @include make-xs-column(12);
+        @include make-sm-column(8);
+
+        &.welcome {
+            @include make-sm-column(4);
+        }
+
+        &.services {
+            > .lead {
+                margin-bottom: 3pt !important;
+            }
+        }
+
+        &.fullwidth {
+            @include make-sm-column(12);
+        }
+    }
+
+    aside {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+
+        &.welcome {
+            @include make-sm-column(8);
+            position: relative;
+        }
+
+        &.about {
+            border-radius: 10px;
+            background-color: #f7f7f7;
+        }
+    }
+}
+
+// The carousel
+#carousel-portfolio {
+    box-shadow: 5px 10px 20px rgba(0,0,0,.25);
+}
+
+// Big badges
+@mixin make-super-center(){
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+}
+
+.big-badge {
+    position: absolute;
+    border-radius: 1000px;
+    @include rotate(5deg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+
+    > .inner {
+        text-align: center;
+        vertical-align: middle;
+        width: 90%;
+        height: 90%;
+        top: 5%;
+        left: 5%;
+        border-radius: 1000px;
+        border: 2px dashed white;
+        box-shadow: none !important;
+        display: block;
+        color: #fff;
+        
+        @include make-super-center();
+
+        > strong {
+            font-family: 'Merriweather Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            line-height: 1em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+            @include rotate(10deg);
+        }
+    }
+
+    &.primary {
+        background-color: $brand-primary;
+    }
+}
+
+// Buttons
+.btn-email {
+    @include button-variant(#fff, $brand-primary, darken($brand-primary, 15%));
+    border-bottom-width: 5px;
 }
 
 .btn-gplus {
@@ -65,16 +195,18 @@ footer {
     @include button-variant(#fff, #069, darken(#069, 10%));
 }
 
-.btn-dark {
-    @include button-variant(#fff, lighten($body-bg, 15%),
-        lighten($body-bg, 5%));
+// icons
+.icon {
+    margin: 5px;
+    min-width: 75px;
+    color: #c7c7c7;
+    text-shadow: -1px -1px 0 rgba(50, 50, 50, 0.8);
+    &.pull-left {
+        margin-right: 15px !important;
+    }
 }
 
-body {
-    padding-top: 100px;
-    margin-bottom: 50px;
-}
-
-em {
-    font-style: italic;
+.myface {
+    margin-left: auto;
+    margin-right: auto;
 }
