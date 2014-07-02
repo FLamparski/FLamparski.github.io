@@ -10483,16 +10483,98 @@ a {
 /* line 28, ../sass/screen.scss */
 a:hover, a:active {
   color: black;
+  text-decoration: none;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
+#headerbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  background-color: #55240d;
+  color: #fff;
+}
+/* line 45, ../sass/screen.scss */
+#headerbar a.minilogo {
+  font-family: Lora, serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: -2pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  display: block;
+}
+/* line 55, ../sass/screen.scss */
+#headerbar a.minilogo:link, #headerbar a.minilogo:visited {
+  color: #fefcfc;
+}
+/* line 59, ../sass/screen.scss */
+#headerbar a.minilogo:hover, #headerbar a.minilogo:active {
+  color: #f8dccf;
+  text-shadow: 0px 0px 20px #fff;
+  letter-spacing: 0pt;
+}
+/* line 66, ../sass/screen.scss */
+#headerbar nav.my-apps > ul {
+  list-style: none;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 76, ../sass/screen.scss */
+#headerbar nav.my-apps > ul > li {
+  display: block;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+/* line 87, ../sass/screen.scss */
+#headerbar nav.my-apps > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 12px 20px;
+  color: #fefcfc;
+}
+/* line 94, ../sass/screen.scss */
+#headerbar nav.my-apps > ul > li > a:hover, #headerbar nav.my-apps > ul > li > a:active {
+  background-color: #813714;
+}
+
+/* line 103, ../sass/screen.scss */
+div.masthead-wrapper {
+  background-color: #291106;
+  z-index: 0;
+  height: 350px;
+}
+
+/* line 109, ../sass/screen.scss */
 header.masthead {
   margin-left: -15px;
   margin-right: -15px;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
+  margin-top: 70px;
+  position: fixed;
+  height: 200px;
+  z-index: 0;
+  display: table;
+  text-align: center;
+  color: #fff;
 }
 /* line 15, ../../../../var/lib/gems/1.9.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 header.masthead:before, header.masthead:after {
@@ -10503,19 +10585,34 @@ header.masthead:before, header.masthead:after {
 header.masthead:after {
   clear: both;
 }
-/* line 39, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 header.masthead > div {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 5%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px 10px 0;
+  width: 100%;
 }
-/* line 45, ../sass/screen.scss */
+@media (min-width: 768px) {
+  /* line 120, ../sass/screen.scss */
+  header.masthead > div {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 120, ../sass/screen.scss */
+  header.masthead > div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 120, ../sass/screen.scss */
+  header.masthead > div {
+    width: 1170px;
+  }
+}
+/* line 137, ../sass/screen.scss */
 header.masthead > div > h1 {
   font-family: Lora, sans-serif;
   font-size: 4.5em;
@@ -10523,37 +10620,57 @@ header.masthead > div > h1 {
   letter-spacing: 3pt;
   margin-bottom: 0px;
 }
-/* line 52, ../sass/screen.scss */
+@media (max-width: 767px) {
+  /* line 137, ../sass/screen.scss */
+  header.masthead > div > h1 {
+    font-size: 3.75em;
+  }
+}
+/* line 148, ../sass/screen.scss */
 header.masthead > div > h1 em {
   font-variant: normal;
   font-size: 1.2em;
 }
-/* line 58, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 header.masthead > div > hr {
-  border-color: #333333;
+  border-color: #fff;
   width: 70%;
   margin-top: -5px;
   margin-bottom: 0px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 header.masthead > div > span {
   font-family: 'Merriweather Sans';
   font-size: 2em;
   font-weight: 300;
   letter-spacing: 4pt;
 }
+@media (max-width: 991px) {
+  /* line 161, ../sass/screen.scss */
+  header.masthead > div > span {
+    letter-spacing: 2pt;
+  }
+}
 
-/* line 74, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 footer.sitefoot {
   font-size: 0.8em;
   text-align: center;
 }
-/* line 78, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 footer.sitefoot > hr {
   margin-bottom: 5px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
+div.main-content {
+  background-color: #fff;
+  z-index: 50;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+}
+
+/* line 192, ../sass/screen.scss */
 section {
   margin-left: -15px;
   margin-right: -15px;
@@ -10567,11 +10684,14 @@ section:before, section:after {
 section:after {
   clear: both;
 }
-/* line 87, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 section.welcome {
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  /*@media(max-width: $screen-xs-max) {
+      margin-top: 400px;
+  }*/
 }
-/* line 91, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 section article {
   position: relative;
   float: left;
@@ -10585,13 +10705,13 @@ section article {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 91, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   section article {
     float: left;
     width: 66.6666666667%;
   }
 }
-/* line 95, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 section article.welcome {
   position: relative;
   min-height: 1px;
@@ -10599,17 +10719,17 @@ section article.welcome {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 95, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   section article.welcome {
     float: left;
     width: 33.3333333333%;
   }
 }
-/* line 100, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 section article.services > .lead {
   margin-bottom: 3pt !important;
 }
-/* line 105, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 section article.fullwidth {
   position: relative;
   min-height: 1px;
@@ -10617,13 +10737,13 @@ section article.fullwidth {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 105, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   section article.fullwidth {
     float: left;
     width: 100%;
   }
 }
-/* line 110, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 section aside {
   position: relative;
   float: left;
@@ -10637,13 +10757,13 @@ section aside {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   section aside {
     float: left;
     width: 33.3333333333%;
   }
 }
-/* line 114, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 section aside.welcome {
   position: relative;
   min-height: 1px;
@@ -10652,34 +10772,34 @@ section aside.welcome {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 114, ../sass/screen.scss */
+  /* line 226, ../sass/screen.scss */
   section aside.welcome {
     float: left;
     width: 66.6666666667%;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 section aside.about {
   border-radius: 10px;
   background-color: #f7f7f7;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #carousel-portfolio {
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .big-badge {
   position: absolute;
   border-radius: 1000px;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
+  transform: rotate(5deg) translateZ(0px);
+  -webkit-transform: rotate(5deg) translateZ(0px);
+  -moz-transform: rotate(5deg) translateZ(0px);
+  z-index: 65;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
-/* line 148, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .big-badge > .inner {
   text-align: center;
   vertical-align: middle;
@@ -10693,7 +10813,7 @@ section aside.about {
   display: block;
   color: #fff;
 }
-/* line 133, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .big-badge > .inner:before {
   content: '';
   display: inline-block;
@@ -10701,7 +10821,7 @@ section aside.about {
   vertical-align: middle;
   margin-right: -0.25em;
 }
-/* line 163, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .big-badge > .inner > strong {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
@@ -10710,21 +10830,25 @@ section aside.about {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 172, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .big-badge > .inner:hover {
   text-decoration: none;
   color: #fff;
-  -webkit-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
+  transform: rotate(10deg) translateZ(0px);
+  -webkit-transform: rotate(10deg) translateZ(0px);
+  -moz-transform: rotate(10deg) translateZ(0px);
 }
-/* line 179, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .big-badge.primary {
   background-color: #55240d;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
+.btn {
+  border-radius: 0 !important;
+}
+
+/* line 306, ../sass/screen.scss */
 .btn-email {
   color: white;
   background-color: #55240d;
@@ -10752,7 +10876,7 @@ section aside.about {
   background-color: white;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .btn-gplus {
   color: white;
   background-color: #dd4b39;
@@ -10779,7 +10903,7 @@ section aside.about {
   background-color: white;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .btn-linkedin {
   color: white;
   background-color: #006699;
@@ -10806,19 +10930,19 @@ section aside.about {
   background-color: white;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .icon {
   margin: 5px;
   min-width: 75px;
   color: #c7c7c7;
   text-shadow: -1px -1px 0 rgba(50, 50, 50, 0.8);
 }
-/* line 204, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .icon.pull-left {
   margin-right: 15px !important;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .myface {
   margin-left: auto;
   margin-right: auto;
