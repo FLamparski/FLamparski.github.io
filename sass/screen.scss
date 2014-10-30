@@ -18,6 +18,11 @@ $brand-primary: #55240d;
 @import "bootstrap";
 @import "font-awesome";
 
+body {
+  overflow-x: none;
+  overflow-y: auto;
+}
+
 // Links
 a {
     color: $link-color;
@@ -43,7 +48,7 @@ a {
     color: #fff;
 
     a.minilogo {
-        font-family: Lora, serif;
+        font-family: 'Lora Regular', Lora, serif;
         font-weight: 400;
         font-size: 34px;
         letter-spacing: -2pt;
@@ -107,11 +112,12 @@ div.masthead-wrapper {
 }
 
 header.masthead {
-    @include make-row();
     margin-bottom: 10px;
     margin-top: 70px;
     position: fixed;
     height: 200px;
+    width: 100%;
+    left: 0;
     z-index: 0;
     display: table;
     text-align: center;
@@ -135,14 +141,19 @@ header.masthead {
         }
         
         > h1 {
-            font-family: Lora, sans-serif;
+            font-family: 'Lora Regular', Lora, sans-serif;
             font-size: 4.5em;
             font-weight: 400;
             letter-spacing: 3pt;
             margin-bottom: 0px;
 
             @media(max-width: $screen-xs-max){
-                font-size: 3.75em;
+                font-size: 3.5em;
+            }
+
+            @media(max-width: 500px){
+                font-size: 2.5em;
+                padding-right: 10px;
             }
 
             em {
@@ -153,9 +164,14 @@ header.masthead {
 
         > hr {
             border-color: #fff;
-            width: 70%;
+            width: 50%;
             margin-top: -5px;
             margin-bottom: 0px;
+
+            @media(max-width: $screen-sm-max){
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
         }
 
         > span {
@@ -166,6 +182,7 @@ header.masthead {
 
             @media(max-width: $screen-sm-max){
                 letter-spacing: 2pt;
+                font-size: 1.8em;
             }
         }
     }
@@ -295,6 +312,18 @@ section {
 
     &.primary {
         background-color: $brand-primary;
+    }
+
+    &.my-work {
+      top: -50px;
+      right: -10px;
+      z-index: 10;
+      width: 120px;
+      height: 120px;
+
+      @media (max-width: $screen-xs-max) {
+        right: 0px;
+      }
     }
 }
 
