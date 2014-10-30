@@ -1,0 +1,47 @@
+<a name="top"></a>
+<a class="sr-only" href="#sr-content">Skip to content</a>
+<div id="headerbar">
+    <div class="container">
+        <div class="col-xs-3 col-sm-1">
+            <a href="/" class="minilogo">FTW</a>
+        </div>
+        <div class="col-xs-9 col-sm-11">
+            <div class="pull-right">
+                <nav class="my-apps">
+                    <ul>
+                        <li>
+                            <a href="/index.html#h-projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- pull-right -->
+        </div> <!-- col-xs-1 ... -->
+    </div> <!-- container -->
+</div> <!-- #headerbar -->
+<a name="sr-content"></a>
+<div class="masthead-wrapper">
+<div class="container">
+    <header class="masthead">
+      {% if include.masthead_heading %}
+        <div>
+            <h1>{{ include.masthead_heading }}</h1>
+            <hr />
+            <span class="subtitle">{{ include.masthead_description }}</span>
+        </div>
+      {% else %}
+        <div>
+            <h1><em>F</em>ilip <em>T</em>omasz <em>W</em>ieland</h1>
+            <hr />
+            <span class="subtitle">Web design &amp; development</span>
+        </div>
+      {% endif %}
+    </header>
+</div>
+</div>

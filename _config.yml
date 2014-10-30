@@ -1,0 +1,11 @@
+# Site settings
+title: Filip Tomasz Wieland
+email: filiplamparski@gmail.com
+description: "Software developer and web enthusiast. Gap year between college and university. Currently works for chaser.io"
+baseurl: ""
+url: "http://www.filipwieland.com"
+github_username:  FLamparski
+
+# Build settings
+markdown: kramdown
+permalink: pretty

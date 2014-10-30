@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filip Tomasz Wieland</title>
+    <description>Software developer and web enthusiast. Gap year between college and university. Currently works for chaser.io</description>
+    <link>http://www.filipwieland.com/</link>
+    <atom:link href="http://www.filipwieland.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 30 Oct 2014 13:53:29 +0000</pubDate>
+    <lastBuildDate>Thu, 30 Oct 2014 13:53:29 +0000</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Welcome to my blog</title>
+        <description>&lt;p&gt;This is probably not going to be very interesting, as I’m just setting up the Jekyll site.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-this-about&quot;&gt;What’s this about?&lt;/h2&gt;
+
+&lt;p&gt;I’m starting a blog documenting my experiences with programming, the internet, and a range of other things.
+I will also use this space to tell you more about the development of Ipsum and other projects.&lt;/p&gt;
+
+&lt;p&gt;I’ll probably be integrating Disqus as my comment system soon enough.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
+        <link>http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/</link>
+        <guid isPermaLink="true">http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
