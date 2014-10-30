@@ -61,52 +61,33 @@ layout: default
         <p class="lead">Bespoke web services</p>
         <p>Did I miss anything? I can help you with most of your web needs. Just ask.</p>
     </article>
-    <aside class="about" itemscope itemtype="http://schema.org/Person" id="person_me">
-        <div style="display: none">
-          <span itemprop="name">Filip Tomasz Wieland</span>
-          <span itemprop="givenName">Filip Tomasz</span>
-          <span itemprop="familyName">Wieland</span>
-          <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organisation">
-            <span itemprop="name">Chaser Technologies</span>
-            <span itemprop="url">https://www.chaser.io</span>
-          </div>
-          <link itemprop="url" href="https://plus.google.com/+FilipLamparski" />
-        </div>
-        <h2>About me</h2>
-        <img src="./img/face.jpg" itemprop="image" width="75" class="myface pull-right img img-responsive img-rounded" alt="A good picture of my face" />
-        <p>I have recently finished <abbr title="In the UK, this means high school">college</abbr>. I took Computing and Business Studies among other subjects, and am eager to put my skills to test on the web design market.</p>
-        <blockquote>
-            <p>A young individual passionate about software development, methodical, reliable, and a quick learner. Highly self-motivated, good team player and leader, rises to the challenge. Learns quickly and sets trends. Not afraid to experiment.</p>
-            <footer>As seein in <cite title="See my CV on Google Drive"><a href="https://docs.google.com/document/d/1seEx6BUM1MkgGlttGAcrAK_tqRlPUx6_xCFAGuavvwA/" target="_blank">my CV</a></cite></footer>
-        </blockquote>
-        <p>I am currently working as a <span itemprop="jobTitle">software developer</span> for <a href="https://www.chaser.io/" target="_blank">chaser.io</a>, an invoice chasing add-on for the cloud accounting system Xero.</p>
-    </aside>
+    {% include person_me.html %}
 </section>
 <section>
   <article>
         <h2 id="h-projects">Projects</h2>
         <div class="row">
             <div class="col-xs-6 col-sm-12 col-md-6" itemscope itemtype="http://schema.org/SoftwareApplication">
-                <h4 itemtype="name">Areabase</h4>
-                <span class="display: none" itemprop="author" itemref="person_me"></span>
+                <h4 itemprop="name">Areabase</h4>
+                <meta itemscope itemprop="creator" itemtype="http://schema.org/Person" itemref="person_me" content="author" />
                 <img src="http://www.filipwieland.com/areabase/images/areabase3-thumb.png"
                      class="img img-responsive"
                      style="width: 100%"
                      itemprop="screenshot" />
-                <p itemtype="description">An Android national statistics application for England and Wales.</p>
+                <p itemprop="description">An Android national statistics application for England and Wales.</p>
                 <a itemprop="url" href="https://play.google.com/store/apps/details?id=lamparski.areabase" target="_blank">
                     <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png">
                 </a>
             </div>
             <div class="col-xs-6 col-sm-12 col-md-6" itemscope itemtype="http://schema.org/SoftwareApplication">
-                <h4 itemtype="name">Ipsum</h4>
-                <span class="display: none" itemprop="author" itemref="person_me"></span>
+                <h4 itemprop="name">Ipsum</h4>
+                <meta itemscope itemprop="creator" itemtype="http://schema.org/Person" itemref="person_me" content="author" />
                 <img src="/img/ipsum_beta_screenshot-scaled.png"
                      alt="Screenshot from the beta version of Ipsum"
                      class="img img-responsive"
                      style="width: 100%"
                      itemprop="screenshot" />
-                <p itemtype="description">A work-in-progress Meteor application for tracking portal submissions in Ingress.</p>
+                <p itemprop="description">A work-in-progress Meteor application for tracking portal submissions in Ingress.</p>
                 <ul class="nav nav-stacked nav-pills">
                   <li><a itemprop="url" href="https://ipsum.filipwieland.com/" target="_blank">Go to app</a></li>
                   <li><a itemprop="url" href="https://ipsum-test.filipwieland.com/" title="Beta uses a self-signed certificate" target="_blank">Go to beta</a></li>

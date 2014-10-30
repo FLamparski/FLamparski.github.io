@@ -10,9 +10,9 @@ permalink: /blog/
 
 <section itemscope itemtype="http://schema.org/Blog">
   {% for post in site.posts %}
-    <article itemscope itemtype="http://schema.org/BlogPosting">
+    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       <h2 itemprop="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <small>Posted on <time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_string }}</time>{% if post.author %} by <span itemprop="author">{{ post.author }}</span>{% endif %}</small>
+      <small>Posted on <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_string }}</time>{% if post.author %} by <span itemprop="author" itemref="{{ post.author.itemref }}">{{ post.author.display }}</span>{% endif %}</small>
       <div itemprop="description">{{ post.excerpt }}</div>
       <hr />
     </article>
@@ -23,3 +23,7 @@ permalink: /blog/
     {% endif %}
   {% endfor %}
 </section>
+
+<div style="display: none;">
+  {% include person_me.html %}
+</div>

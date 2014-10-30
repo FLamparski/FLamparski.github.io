@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html itemscope itemtype="http://schema.org/WebPage">
+<html itemscope itemtype="http://schema.org/WebPage">
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome to my blog | Filip Wieland: Web Design & Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is probably not going to be very interesting, as I'm just setting up the Jekyll site.
+    <meta itemprop="description" name="description" content="This is probably not going to be very interesting, as I'm just setting up the Jekyll site.
 
 ">
-    <link rel="canonical" href="http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/">
+    <link itemprop="url" rel="canonical" href="http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/">
     <meta property="og:image" content="http://www.filipwieland.com/img/face.jpg" />
     <meta property="og:title" content="Welcome to my blog | Filip Wieland: Web Design & Development" />
     <meta property="og:url" content="http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css">
     <link href="http://www.filipwieland.com/feed.xml" type="application/atom+xml" rel="alternate" title="Blog feed" />
+    <meta itemprop="author" itemref="person_me" />
 </head>
 
 
     <body>
-
     
       <a name="top"></a>
 <a class="sr-only" href="#sr-content">Skip to content</a>
@@ -68,15 +68,16 @@
 
     <div class="main-content">
       <div class="container">
-        <section class="post welcome-to-my-blog" itemscope itemtype="http://schema.org/BlogPosting">
+        <section>
+  <article class="post welcome-to-my-blog" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header col-xs-12">
-    <h1 itemprop="name">Welcome to my blog</h1>
-    <p>Posted on <time datetime="2014-10-30 00:00:00 +0000" itemprop="datePublished">30 Oct 2014</time> by <span itemprop="author">Filip Wieland</span></p>
-  </header>
+    <header class="post-header col-xs-12">
+      <h1 itemprop="name">Welcome to my blog</h1>
+      <p>Posted on <time datetime="2014-10-30T00:00:00+00:00" itemprop="datePublished">30 Oct 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span></p>
+    </header>
 
-  <div class="col-xs-12 post-content">
-  <p>This is probably not going to be very interesting, as I’m just setting up the Jekyll site.</p>
+    <div class="col-xs-12 post-content">
+    <p>This is probably not going to be very interesting, as I’m just setting up the Jekyll site.</p>
 
 <h2 id="whats-this-about">What’s this about?</h2>
 
@@ -85,7 +86,27 @@ I will also use this space to tell you more about the development of Ipsum and o
 
 <p>I’ll probably be integrating Disqus as my comment system soon enough.</p>
 
-  </div>
+    </div>
+
+  </article>
+  <aside class="about" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Filip Tomasz Wieland" id="person_me" />
+      <meta itemprop="givenName" content="Filip Tomasz" />
+      <meta itemprop="familyName" content="Wieland" />
+      <div style="display: none;" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <span itemprop="name">Chaser</span>
+        <a itemprop="url" href="https://www.chaser.io">Chaser</a>
+      </div>
+      <a href="https://plus.google.com/+FilipLamparski" itemprop="url" style="display: none;">My G+ Profile</a>
+    <h2>About me</h2>
+    <img src="/img/face.jpg" itemprop="image" width="75" class="myface pull-right img img-responsive img-rounded" alt="A good picture of my face" />
+    <p>I have recently finished <abbr title="In the UK, this means high school">college</abbr>. I took Computing and Business Studies among other subjects, and am eager to put my skills to test on the web design market.</p>
+    <blockquote>
+        <p>A young individual passionate about software development, methodical, reliable, and a quick learner. Highly self-motivated, good team player and leader, rises to the challenge. Learns quickly and sets trends. Not afraid to experiment.</p>
+        <footer>As seein in <cite title="See my CV on Google Drive"><a href="https://docs.google.com/document/d/1seEx6BUM1MkgGlttGAcrAK_tqRlPUx6_xCFAGuavvwA/" target="_blank">my CV</a></cite></footer>
+    </blockquote>
+    <p>I am currently working as a <span itemprop="jobTitle">software developer</span> for <a href="https://www.chaser.io/" target="_blank">chaser.io</a>, an invoice chasing add-on for the cloud accounting system Xero.</p>
+</aside>
 
 </section>
 <hr />
@@ -93,7 +114,7 @@ I will also use this space to tell you more about the development of Ipsum and o
   <div class="col-xs-12 post-list">
     <ul>
       
-      <li itemscope itemtype="http://schema.org/BlogPosting"><div class="col-xs-12"><a itemtype="name" href="/2014/10/30/welcome-to-my-blog/">Welcome to my blog</a> <span class="pull-right">By <span itemprop="author">Filip Wieland</span> on <time datetime="2014-10-30 00:00:00 +0000">30 Oct 2014</time></span></div></li>
+      <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="col-xs-12"><a itemprop="name" href="/2014/10/30/welcome-to-my-blog/">Welcome to my blog</a> <span class="pull-right">By <span itemscope itemprop="author" itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span> on <time datetime="2014-10-30T00:00:00+00:00">30 Oct 2014</time></span></div></li>
       
     </ul>
   </div>

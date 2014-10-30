@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html itemscope itemtype="http://schema.org/{% if page.path == 'index.html' %}WebSite{% else %}WebPage{% endif %}">
+<html itemscope itemtype="http://schema.org/{% if page.path == 'index.html' %}WebSite{% else %}WebPage{% endif %}">
 
   {% include head.html %}
 
     <body>
-
     {% if page.masthead_auto %}
       {% include header.html masthead_heading=page.title masthead_description=page.meta %}
     {% else if page.masthead_manual %}

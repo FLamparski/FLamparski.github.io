@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Welcome to my blog
-author: Filip Wieland
+author:
+  display: Filip Wieland
+  itemref: person_me
 masthead:
   heading: Welcome to my blog
   description: Post Zero
