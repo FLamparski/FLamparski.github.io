@@ -54,6 +54,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-jekyll'
   grunt.loadNpmTasks 'grunt-express'
 
-  grunt.registerTask 'default', ['express', 'jshint', 'concat', 'uglify',
+  grunt.registerTask 'default', ['jshint', 'concat', 'uglify',
     'sass', 'jekyll']
-  grunt.registerTask 'serve', ['default', 'watch']
+  grunt.registerTask 'serve', ['express', 'default', 'watch']

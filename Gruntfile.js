@@ -71,8 +71,8 @@
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-express');
-    grunt.registerTask('default', ['express', 'jshint', 'concat', 'uglify', 'sass', 'jekyll']);
-    return grunt.registerTask('serve', ['default', 'watch']);
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'sass', 'jekyll']);
+    return grunt.registerTask('serve', ['express', 'default', 'watch']);
   };
 
 }).call(this);
