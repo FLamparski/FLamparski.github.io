@@ -4,17 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to my blog | Filip Wieland: Web Design & Development</title>
+    <title>The Beginning | Filip Wieland: Web Design & Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta itemprop="description" name="description" content="This is probably not going to be very interesting, as I'm just setting up the Jekyll site.
+    <meta itemprop="description" name="description" content="I've been genuinely trying to come up with a reason why I might want to start
+publishing a blog. Indeed, it may seem unnecessary. So why do I bother?
 
 ">
-    <link itemprop="url" rel="canonical" href="http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/">
+    <link itemprop="url" rel="canonical" href="http://www.filipwieland.com/misc/2014/11/07/the-beginning/">
     <meta property="og:image" content="http://www.filipwieland.com/img/face.jpg" />
-    <meta property="og:title" content="Welcome to my blog | Filip Wieland: Web Design & Development" />
-    <meta property="og:url" content="http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/" />
+    <meta property="og:title" content="The Beginning | Filip Wieland: Web Design & Development" />
+    <meta property="og:url" content="http://www.filipwieland.com/misc/2014/11/07/the-beginning/" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
     <link href="http://www.filipwieland.com/feed.xml" type="application/atom+xml" rel="alternate" title="Blog feed" />
     <meta itemprop="author" itemref="person_me" />
 </head>
@@ -24,7 +25,7 @@
     
       <a name="top"></a>
 <a class="sr-only" href="#sr-content">Skip to content</a>
-<div id="headerbar">
+<div id="headerbar" class="page masthead_has_bg">
     <div class="container">
         <div class="col-xs-3 col-sm-1">
             <a href="/" class="minilogo">FTW</a>
@@ -55,7 +56,7 @@
     <header class="masthead">
       
         <div>
-            <h1>Welcome to my blog</h1>
+            <h1>The Blog of Filip Wieland</h1>
             <hr />
             <span class="subtitle">Post Zero</span>
         </div>
@@ -69,22 +70,42 @@
     <div class="main-content">
       <div class="container">
         <section>
-  <article class="post welcome-to-my-blog" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post the-beginning" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header col-xs-12">
-      <h1 itemprop="name">Welcome to my blog</h1>
-      <p>Posted on <time datetime="2014-10-30T00:00:00+00:00" itemprop="datePublished">30 Oct 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span></p>
+      <h1 itemprop="name">The Beginning</h1>
+      <p>Posted on <time datetime="2014-11-07T00:00:00+00:00" itemprop="datePublished">07 Nov 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span></p>
     </header>
 
     <div class="col-xs-12 post-content">
-    <p>This is probably not going to be very interesting, as I’m just setting up the Jekyll site.</p>
+    <p>I’ve been genuinely trying to come up with a reason why I might want to start
+publishing a blog. Indeed, it may seem unnecessary. So why do I bother?</p>
 
-<h2 id="whats-this-about">What’s this about?</h2>
+<p>There are some aspects to it. First, this setup allows me to basically have any
+content I like, including custom scripts, styles, and so on. It does not
+limit me to the extent a third-party platform would. I have previously used
+Blogger, and trying to do anything but the most basic text posts is nigh impossible.</p>
 
-<p>I’m starting a blog documenting my experiences with programming, the internet, and a range of other things.
-I will also use this space to tell you more about the development of Ipsum and other projects.</p>
+<p>Second, as an effort to organise my writing into one coherent set. I have some
+loose documents laying around that I’d like to tie together. Changelogs for my
+projects. Short stories I never finished. Media critiques. That sort of stuff.</p>
 
-<p>I’ll probably be integrating Disqus as my comment system soon enough.</p>
+<p>And third, to create an archive of the weird and interesting stuff I come
+across as a developer. In a way, being a ‘full(ish)-stack’ web developer
+at the age of 18 is still kind of rare. This is very much an exciting
+adventure for me, and I hope to document it here.</p>
+
+<p>I will be adding more to the blog as I go along.</p>
+
+<h2 id="site-tech">Site tech</h2>
+
+<p>I’m currently using Jekyll to generate static HTML pages hosted on GitHub. I have a
+Grunt task which wrangles Sass, Jekyll, and some basic JavaScript tasks to aid
+development (but GitHub should pick up on everything anyway).</p>
+
+<p>Header images are generated using the <a href="https://github.com/btmills/geopattern">geopattern</a>
+package based on the page title. I’ve written some JS to fade in the header as you
+scroll down on blog pages. You can see it all in <a href="https://github.com/FLamparski/FLamparski.github.io">the repo</a>.</p>
 
     </div>
 
@@ -100,12 +121,14 @@ I will also use this space to tell you more about the development of Ipsum and o
       <a href="https://plus.google.com/+FilipLamparski" itemprop="url" style="display: none;">My G+ Profile</a>
     <h2>About me</h2>
     <img src="/img/face.jpg" itemprop="image" width="75" class="myface pull-right img img-responsive img-rounded" alt="A good picture of my face" />
-    <p>I have recently finished <abbr title="In the UK, this means high school">college</abbr>. I took Computing and Business Studies among other subjects, and am eager to put my skills to test on the web design market.</p>
-    <blockquote>
-        <p>A young individual passionate about software development, methodical, reliable, and a quick learner. Highly self-motivated, good team player and leader, rises to the challenge. Learns quickly and sets trends. Not afraid to experiment.</p>
-        <footer>As seein in <cite title="See my CV on Google Drive"><a href="https://docs.google.com/document/d/1seEx6BUM1MkgGlttGAcrAK_tqRlPUx6_xCFAGuavvwA/" target="_blank">my CV</a></cite></footer>
-    </blockquote>
+    <p>Full(ish)-stack web developer and general-puropse hacker.</p>
     <p>I am currently working as a <span itemprop="jobTitle">software developer</span> for <a href="https://www.chaser.io/" target="_blank">chaser.io</a>, an invoice chasing add-on for the cloud accounting system Xero.</p>
+    <p>
+      <ul class="nav nav-stacked nav-pills">
+        <li><a href="https://plus.google.com/+FilipLamparski" rel="author"><i class="fa fa-google-plus"></i>&emsp;Google+</a></li>
+        <li><a href="https://twitter.com/FLamparski"><i class="fa fa-twitter"></i>&emsp;Twitter</a></li>
+      </ul>
+    </p>
 </aside>
 
 </section>
@@ -114,7 +137,7 @@ I will also use this space to tell you more about the development of Ipsum and o
   <div class="col-xs-12 post-list">
     <ul>
       
-      <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="col-xs-12"><a itemprop="name" href="/2014/10/30/welcome-to-my-blog/">Welcome to my blog</a> <span class="pull-right">By <span itemscope itemprop="author" itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span> on <time datetime="2014-10-30T00:00:00+00:00">30 Oct 2014</time></span></div></li>
+      <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="col-xs-12"><a itemprop="name" href="/misc/2014/11/07/the-beginning/">The Beginning</a> <span class="pull-right">By <span itemscope itemprop="author" itemtype="http://schema.org/Person" itemref="person_me">Filip Wieland</span> on <time datetime="2014-11-07T00:00:00+00:00">07 Nov 2014</time></span></div></li>
       
     </ul>
   </div>
@@ -129,10 +152,18 @@ I will also use this space to tell you more about the development of Ipsum and o
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="./js/behaviour.js"></script>
+    <script>
+      window.jekyll = {
+        page: {
+          title: "The Beginning",
+          masthead: {"heading":"The Blog of Filip Wieland","description":"Post Zero","background":"##geopattern##"}
+        }
+      };
+    </script>
+    <script src="/dist/ftw-blog.min.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

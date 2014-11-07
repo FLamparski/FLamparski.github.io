@@ -5,25 +5,47 @@
     <description>Software developer and web enthusiast. Gap year between college and university. Currently works for chaser.io</description>
     <link>http://www.filipwieland.com/</link>
     <atom:link href="http://www.filipwieland.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 30 Oct 2014 14:56:56 +0000</pubDate>
-    <lastBuildDate>Thu, 30 Oct 2014 14:56:56 +0000</lastBuildDate>
+    <pubDate>Fri, 07 Nov 2014 22:59:39 +0000</pubDate>
+    <lastBuildDate>Fri, 07 Nov 2014 22:59:39 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to my blog</title>
-        <description>&lt;p&gt;This is probably not going to be very interesting, as I’m just setting up the Jekyll site.&lt;/p&gt;
+        <title>The Beginning</title>
+        <description>&lt;p&gt;I’ve been genuinely trying to come up with a reason why I might want to start
+publishing a blog. Indeed, it may seem unnecessary. So why do I bother?&lt;/p&gt;
 
-&lt;h2 id=&quot;whats-this-about&quot;&gt;What’s this about?&lt;/h2&gt;
+&lt;p&gt;There are some aspects to it. First, this setup allows me to basically have any
+content I like, including custom scripts, styles, and so on. It does not
+limit me to the extent a third-party platform would. I have previously used
+Blogger, and trying to do anything but the most basic text posts is nigh impossible.&lt;/p&gt;
 
-&lt;p&gt;I’m starting a blog documenting my experiences with programming, the internet, and a range of other things.
-I will also use this space to tell you more about the development of Ipsum and other projects.&lt;/p&gt;
+&lt;p&gt;Second, as an effort to organise my writing into one coherent set. I have some
+loose documents laying around that I’d like to tie together. Changelogs for my
+projects. Short stories I never finished. Media critiques. That sort of stuff.&lt;/p&gt;
 
-&lt;p&gt;I’ll probably be integrating Disqus as my comment system soon enough.&lt;/p&gt;
+&lt;p&gt;And third, to create an archive of the weird and interesting stuff I come
+across as a developer. In a way, being a ‘full(ish)-stack’ web developer
+at the age of 18 is still kind of rare. This is very much an exciting
+adventure for me, and I hope to document it here.&lt;/p&gt;
+
+&lt;p&gt;I will be adding more to the blog as I go along.&lt;/p&gt;
+
+&lt;h2 id=&quot;site-tech&quot;&gt;Site tech&lt;/h2&gt;
+
+&lt;p&gt;I’m currently using Jekyll to generate static HTML pages hosted on GitHub. I have a
+Grunt task which wrangles Sass, Jekyll, and some basic JavaScript tasks to aid
+development (but GitHub should pick up on everything anyway).&lt;/p&gt;
+
+&lt;p&gt;Header images are generated using the &lt;a href=&quot;https://github.com/btmills/geopattern&quot;&gt;geopattern&lt;/a&gt;
+package based on the page title. I’ve written some JS to fade in the header as you
+scroll down on blog pages. You can see it all in &lt;a href=&quot;https://github.com/FLamparski/FLamparski.github.io&quot;&gt;the repo&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
-        <link>http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/</link>
-        <guid isPermaLink="true">http://www.filipwieland.com/2014/10/30/welcome-to-my-blog/</guid>
+        <pubDate>Fri, 07 Nov 2014 00:00:00 +0000</pubDate>
+        <link>http://www.filipwieland.com/misc/2014/11/07/the-beginning/</link>
+        <guid isPermaLink="true">http://www.filipwieland.com/misc/2014/11/07/the-beginning/</guid>
         
+        
+        <category>misc</category>
         
       </item>
     

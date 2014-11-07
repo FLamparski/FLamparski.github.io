@@ -12,7 +12,7 @@
     <meta property="og:title" content="About | Filip Wieland: Web Design & Development" />
     <meta property="og:url" content="http://www.filipwieland.com/about/" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
     <link href="http://www.filipwieland.com/feed.xml" type="application/atom+xml" rel="alternate" title="Blog feed" />
     <meta itemprop="author" itemref="person_me" />
 </head>
@@ -22,7 +22,7 @@
     
       <a name="top"></a>
 <a class="sr-only" href="#sr-content">Skip to content</a>
-<div id="headerbar">
+<div id="headerbar" class="page">
     <div class="container">
         <div class="col-xs-3 col-sm-1">
             <a href="/" class="minilogo">FTW</a>
@@ -94,10 +94,18 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="./js/behaviour.js"></script>
+    <script>
+      window.jekyll = {
+        page: {
+          title: "About",
+          masthead: null
+        }
+      };
+    </script>
+    <script src="/dist/ftw-blog.min.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
