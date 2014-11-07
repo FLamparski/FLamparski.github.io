@@ -1,6 +1,6 @@
 <a name="top"></a>
 <a class="sr-only" href="#sr-content">Skip to content</a>
-<div id="headerbar">
+<div id="headerbar" class="{% if page.path == 'index.html' %}main{% else %}page{% endif %}{% if page.masthead.background %} masthead_has_bg{% endif %}">
     <div class="container">
         <div class="col-xs-3 col-sm-1">
             <a href="/" class="minilogo">FTW</a>
