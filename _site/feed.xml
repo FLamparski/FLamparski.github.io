@@ -5,9 +5,82 @@
     <description>Software developer and web enthusiast. Gap year between college and university. Currently works for chaser.io</description>
     <link>http://www.filipwieland.com/</link>
     <atom:link href="http://www.filipwieland.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Nov 2014 22:59:39 +0000</pubDate>
-    <lastBuildDate>Fri, 07 Nov 2014 22:59:39 +0000</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Sun, 16 Nov 2014 21:50:41 +0000</pubDate>
+    <lastBuildDate>Sun, 16 Nov 2014 21:50:41 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.1</generator>
+    
+      <item>
+        <title>UCAS as an Individual, Part One</title>
+        <description>&lt;p&gt;I do not believe I am wrong in saying that the majority of university applicants go
+through &lt;a href=&quot;https://en.wikipedia.org/wiki/UCAS&quot; target=&quot;_blank&quot;&gt;UCAS&lt;/a&gt; as part of their
+sixth form experience. In fact, I did the same thing back with
+&lt;a href=&quot;http://www.ctksfc.ac.uk/site/aquinas/&quot; target=&quot;_blank&quot;&gt;Christ the King: Aquinas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references-and-statements&quot;&gt;References and statements&lt;/h2&gt;
+
+&lt;p&gt;I found writing my personal statement to be relatively straightforward compared
+to obtaining a reference from one of my previous teachers. Your general options
+for getting people to look at your statement are to either bother your friends
+or try and crowdsource it by involving, say, the entire
+&lt;a href=&quot;http://www.the-enlightened.info/&quot; target=&quot;_blank&quot;&gt;London Enlightened&lt;/a&gt;
+community (Enlightened of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Ingress_(game)&quot; target=&quot;_blank&quot;&gt;Ingress&lt;/a&gt; variety).&lt;/p&gt;
+
+&lt;p&gt;One thing to note when writing your personal statement is that the 4000 character
+limit is not &lt;em&gt;exactly&lt;/em&gt; the source of truth - it has to be something along the
+lines of 4000 characters across 47 lines under their line-breaking algorithm,
+oh and if you use a new-line character it will count as two because of the
+&lt;code&gt;\r\n&lt;/code&gt; convention.&lt;/p&gt;
+
+&lt;p&gt;So while the UCAS Apply, uh, application is a whole failboat’s worth of WTF in and of
+itself (more on that in a future blog post), I think one of the most difficult
+parts of the process is getting a reference. Unlike a regular character or personal
+reference, this one should underline the applicant’s learning ability and passion
+for the subject they chose. It is not trying to convince an HR person to
+hire somebody, but rather an admissions tutor to offer somebody a place at
+university. Therefore, I believe that good quality references of such type are more
+likely to come from one’s teachers rather than an employer or colleague.
+Obtaining such a reference whilst &lt;em&gt;at&lt;/em&gt; college is hard.&lt;/p&gt;
+
+&lt;p&gt;Getting one when you’ve already &lt;em&gt;left&lt;/em&gt; the college is much, much harder.&lt;/p&gt;
+
+&lt;h2 id=&quot;pick-your-referee&quot;&gt;Pick your referee.&lt;/h2&gt;
+
+&lt;p&gt;This should be someone who remembers you a lot, and that you trust to
+write a solid, high-quality reference. Unfortunately, those teachers are usually
+swamped by other students’ requests for references and help with personal
+statements, which they have to prioritise.&lt;/p&gt;
+
+&lt;h2 id=&quot;prepare-to-email-them-a-lot&quot;&gt;Prepare to email them. A lot.&lt;/h2&gt;
+
+&lt;p&gt;One of the oft-repeated phrase at &lt;a href=&quot;https://www.chaser.io&quot;&gt;Chaser&lt;/a&gt; is “polite persistence pays”.
+While I can’t easily use this product for my current need (I’m chasing a reference,
+not an overdue invoice), the principle itself is solid.&lt;/p&gt;
+
+&lt;p&gt;I am now sending up to 4 emails per week, to multiple members of staff in the
+college. Some of them are general purpose reception emails which means I get to
+perform miniature ‘amplification attacks’. As of me writing this, it is still
+not enough.&lt;/p&gt;
+
+&lt;h2 id=&quot;have-backups&quot;&gt;Have backups.&lt;/h2&gt;
+
+&lt;p&gt;I sincerely hope I’ve managed to get enough people to remember me in case I need
+to ask someone else for a reference at the last minute. I hope to send off
+my application by the end of November. If I can’t get the reference from my
+primary person of choice by then, I’ll have to ask someone else.&lt;/p&gt;
+
+&lt;p&gt;Half of the month has already gone past. Tick tock.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Next in the series: In which I explain why your 4000-character statement is actually 4007 characters long&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+        <link>http://www.filipwieland.com/learning/2014/11/16/ucas-as-individual/</link>
+        <guid isPermaLink="true">http://www.filipwieland.com/learning/2014/11/16/ucas-as-individual/</guid>
+        
+        
+        <category>learning</category>
+        
+      </item>
     
       <item>
         <title>The Beginning</title>
