@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brian Blessed demo</title>
+  <style type="text/css">
+    .out {
+      font-weight: bold;
+    }
+    body {
+      font: 14/20px sans-serif;
+    }
+  </style>
+</head>
+<body>
+  Normal: <span class="out normal"></span><br />
+  Patched: <span class="out patched"></span>
+
+  <script type="text/javascript">
+  function Name(first, last) {
+    this.first = first;
+    this.last = last;
+  }
+
+  Name.prototype.getFull = function() {
+    return this.first + ' ' + this.last;
+  };
+
+  (function() {
+    var orig = Name.prototype.getFull;
+    Object.defineProperty(Name.prototype, 'getFull', {
+      get: function() {
+        if (this.first === 'Brian' && this.last === 'Blessed') {
+          return function() {
+            return 'I AM BRIAN BLESSED!';
+          }
+        } else {
+          return orig;
+        }
+      }
+    });
+  }());
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var john = new Name('John', 'Doe');
+    var brian = new Name('Brian', 'Blessed');
+    document.querySelector('.out.normal').innerHTML = john.getFull();
+    // => John Doe
+    document.querySelector('.out.patched').innerHTML = brian.getFull();
+    // => I AM BRIAN BLESSED!
+  });
+  </script>
+</body>
+</html>
