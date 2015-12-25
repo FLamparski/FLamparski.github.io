@@ -44,7 +44,7 @@ module.exports = (grunt) ->
         '_includes/**/*.html', 'blog/**/*', '_posts/**/*',
         '_layouts/**/*', 'index.html'
       ]
-      tasks: ['jshint', 'concat', 'uglify', 'sass', 'jekyll']
+      tasks: ['jshint', 'concat', 'uglify', 'sass']
 
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-jshint'
@@ -55,5 +55,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-express'
 
   grunt.registerTask 'default', ['jshint', 'concat', 'uglify',
-    'sass', 'jekyll']
-  grunt.registerTask 'serve', ['express', 'default', 'watch']
+    'sass']
+  grunt.registerTask 'serve', ['express', 'default', 'jekyll', 'watch']

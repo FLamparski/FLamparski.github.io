@@ -10,13 +10,13 @@
                 <nav class="my-apps">
                     <ul>
                         <li>
-                            <a href="/index.html#h-projects">
+                            <a href="https://github.com/FLamparski">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="/blog">
-                                Blog
+                            <a href="/about">
+                                About
                             </a>
                         </li>
                     </ul>
@@ -26,22 +26,20 @@
     </div> <!-- container -->
 </div> <!-- #headerbar -->
 <a name="sr-content"></a>
-<div class="masthead-wrapper">
+<div class="masthead-wrapper{% if include.masthead_image %} image{% endif %}"{% if include.masthead_image %} style="background-image: url({{ include.masthead_image }})"{% endif %}>
 <div class="container">
     <header class="masthead">
-      {% if include.masthead_heading %}
-        <div>
-            <h1>{{ include.masthead_heading }}</h1>
-            <hr />
-            <span class="subtitle">{{ include.masthead_description }}</span>
-        </div>
-      {% else %}
-        <div>
-            <h1><em>F</em>ilip <em>T</em>omasz <em>W</em>ieland</h1>
-            <hr />
-            <span class="subtitle">Web design &amp; development</span>
-        </div>
-      {% endif %}
+      <div>
+        <h1>{% if include.masthead_heading %}{{ include.masthead_heading }}{% else %}<em>F</em>ilip <em>T</em>omasz <em>W</em>ieland{% endif %}</h1>
+        <hr />
+        <span class="subtitle">{% if include.masthead_description %}{{ include.masthead_description }}{% else %}Observations on software, science, and politics{% endif %}</span>
+        {% if include.masthead_image %}
+        <a href="#after-header" class="more">More</a>
+        {% endif %}
+      </div>
     </header>
 </div>
+</div>
+<div style="position: relative">
+<a name="after-header" style="position: absolute; top: -160px"></a>
 </div>

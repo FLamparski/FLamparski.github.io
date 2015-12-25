@@ -61,7 +61,7 @@
           livereload: true
         },
         files: ['js/ftw/*.js', 'sass/*.scss', 'Gruntfile.coffee', '_includes/**/*.html', 'blog/**/*', '_posts/**/*', '_layouts/**/*', 'index.html'],
-        tasks: ['jshint', 'concat', 'uglify', 'sass', 'jekyll']
+        tasks: ['jshint', 'concat', 'uglify', 'sass']
       }
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -71,8 +71,8 @@
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-express');
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'sass', 'jekyll']);
-    return grunt.registerTask('serve', ['express', 'default', 'watch']);
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'sass']);
+    return grunt.registerTask('serve', ['express', 'default', 'jekyll', 'watch']);
   };
 
 }).call(this);

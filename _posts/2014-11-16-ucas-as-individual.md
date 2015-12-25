@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UCAS as an Individual, Part One
+title: UCAS as an Individual
 author:
   display: Filip Wieland
   itemref: person_me
@@ -71,8 +71,6 @@ my application by the end of November. If I can't get the reference from my
 primary person of choice by then, I'll have to ask someone else.
 
 Half of the month has already gone past. Tick tock.
-
-_Next in the series: In which I explain why your 4000-character statement is actually 4007 characters long_
 
 [chaser]: https://www.chaser.io
 [enlondon]: http://www.the-enlightened.info/

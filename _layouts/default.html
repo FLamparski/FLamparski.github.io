@@ -6,8 +6,10 @@
     <body>
     {% if page.masthead_auto %}
       {% include header.html masthead_heading=page.title masthead_description=page.meta %}
-    {% else if page.masthead_manual %}
+    {% elsif page.masthead_manual %}
       {% include header.html masthead_heading=page.masthead.heading masthead_description=page.masthead.description %}
+    {% elsif page.masthead_image %}
+      {% include header.html masthead_image=page.masthead_image masthead_heading=page.masthead.heading masthead_description=page.masthead.description %}
     {% else %}
       {% include header.html %}
     {% endif %}
@@ -27,7 +29,8 @@
       window.jekyll = {
         page: {
           title: "{{ page.title }}",
-          masthead: {{ page.masthead | jsonify }}
+          masthead: {{ page.masthead | jsonify }},
+          {% if page.masthead_image %}masthead_image: true {% endif %}
         }
       };
     </script>

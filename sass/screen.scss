@@ -1,7 +1,9 @@
 @import "compass/reset";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Lora:400|Merriweather+Sans:300,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Merriweather+Sans:300,700);
 
-$font-family-sans-serif: "Source Sans Pro", Ubuntu, Verdana, "Helvetica Neue", sans-serif;
+$font-family-serif: Merriweather, Georgia, Times New Roman, Times, serif;
+$font-family-base: $font-family-serif;
+$line-height-base: 1.6;
 $font-family-monospace: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-size-base: 15px;
 
@@ -69,7 +71,7 @@ article em {
     }
 
     a.minilogo {
-        font-family: 'Lora Regular', Lora, serif;
+        font-family: $font-family-serif;
         font-weight: 400;
         font-size: 34px;
         letter-spacing: -2pt;
@@ -130,27 +132,42 @@ div.masthead-wrapper {
     background-color: darken($brand-primary, 10%);
     z-index: 0;
     height: 350px;
+    position: relative;
+
+    &.image {
+      background-size: cover;
+      background-position: 50% 50%;
+      background-attachment: fixed;
+      height: 100%;
+
+      .masthead > div {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
 }
 
 header.masthead {
     margin-bottom: 10px;
     margin-top: 70px;
-    position: fixed;
-    height: 200px;
+    position: absolute;
+    height: 100%;
     width: 100%;
     left: 0;
     z-index: 0;
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
     color: #fff;
-
+    
     > div {
         text-align: center;
         text-transform: uppercase;
-        display: table-cell;
-        vertical-align: middle;
-        padding: 20px 10px 0;
+        padding-bottom: 21px;
         width: 100%;
+        margin-top: -70px;
         @media (min-width: $screen-sm-min) {
             width: $container-sm;
         }
@@ -162,7 +179,7 @@ header.masthead {
         }
         
         > h1 {
-            font-family: 'Lora Regular', Lora, sans-serif;
+            font-family: $font-family-serif;
             font-size: 4.5em;
             font-weight: 400;
             letter-spacing: 3pt;
@@ -206,6 +223,13 @@ header.masthead {
                 font-size: 1.8em;
             }
         }
+
+        a.more {
+          display: block;
+          &:link, &:hover, &:active, &:visited {
+            color: #fff;
+          }
+        }
     }
 }
 
@@ -224,6 +248,12 @@ div.main-content {
     z-index: 50;
     box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
     padding-top: 20px;
+}
+
+.container.mini {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 section {
