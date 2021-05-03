@@ -5,9 +5,17 @@
             :key="page.slug"
             :to="page.path"
             class="page-link">
-            <h2 class="page-link">{{ page.title }}</h2>
-            <p class="page-description">{{ page.description }}</p>
-            <p class="text-grey date">{{ formatDate(page.date) }}</p>
+            <card
+                :card-image="page.cardImage"
+                :card-image-alt="`Card image for ${page.title}`">
+                <template v-slot:body>
+                    <h2 class="page-link-title">{{ page.title }}</h2>
+                    <p class="page-description">{{ page.description }}</p>
+                </template>
+                <template v-slot:footer>
+                    <p class="text-grey date">{{ formatDate(page.date) }}</p>
+                </template>
+            </card>
         </nuxt-link>
     </div>
 </template>
@@ -15,7 +23,9 @@
 <script lang="ts">
 import Vue, { PropType } from 'vue'
 import { IContentDocument } from '~/node_modules/@nuxt/content/types/content';
+import Card from './Card.vue';
 export default Vue.extend({
+  components: { Card },
     props: {
         pages: { type: Array as PropType<IContentDocument[]>, required: true },
     },
@@ -41,17 +51,8 @@ export default Vue.extend({
         grid-template-columns: 1fr;
     }
 
-    > .page-link {
-        display: flex;
-        flex-direction: column;
-        background-color: #fafafa;
-        border-radius: 4px;
-        padding: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
-        > .date {
-            margin-top: auto;
-        }
+    .page-link > .card {
+        height: 100%;
     }
 }
 </style>

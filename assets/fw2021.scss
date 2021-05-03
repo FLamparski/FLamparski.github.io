@@ -25,8 +25,12 @@ h1, h2, h3, h4, h5, h6, .text-heading {
     margin-bottom: 0.5em;
 }
 
-p {
+p, ul, ol {
     margin-bottom: 0.5em;
+}
+
+ul {
+    padding-left: 16px;
 }
 
 html, body, .__nuxt, .__layout {

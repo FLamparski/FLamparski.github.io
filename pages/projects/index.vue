@@ -19,7 +19,7 @@ import Vue from 'vue'
 export default Vue.extend({
     layout: 'theme-projects',
     head: {
-        title: 'Music - Filip Wieland',
+        title: 'Projects - Filip Wieland',
     },
     async asyncData({ $content }: Context) {
         const pages = await $content('projects').sortBy('date', 'desc').fetch();

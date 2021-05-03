@@ -1,7 +1,7 @@
 ---
 title: Dril Or No Dril? Building a text classifier in TensorFlow
 description: In which I go through the process of building and deploying a text classifier that tries to determine if a tweet could be from @dril or not.
-cover_image: https://pbs.twimg.com/profile_banners/16298441/1394248006/1500x500
+cardImage: https://pbs.twimg.com/profile_banners/16298441/1394248006/1500x500
 date: 2019-01-29
 ---
 

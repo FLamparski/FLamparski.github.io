@@ -3,7 +3,7 @@ title: An Air Quality Update
 published: true
 description: Continuing work on my air quality monitoring device
 tags: arduino, hardware, iot, environment
-cover_image: https://thepracticaldev.s3.amazonaws.com/i/3bmgyx4dkjyngzb1dwx3.jpg
+cardImage: https://thepracticaldev.s3.amazonaws.com/i/3bmgyx4dkjyngzb1dwx3.jpg
 date: 2019-06-21
 ---
 

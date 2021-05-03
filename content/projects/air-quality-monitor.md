@@ -3,7 +3,7 @@ title: Working on my IoT air quality monitoring setup
 published: true
 description: I am making an air quality monitoring station. Here I walk you through my basic setup.
 tags: environment, arduino, monitoring, hardware
-cover_image: https://thepracticaldev.s3.amazonaws.com/i/hpdc73eh88xd8xlfpyho.jpg
+#cardImage: https://thepracticaldev.s3.amazonaws.com/i/hpdc73eh88xd8xlfpyho.jpg
 date: 2019-06-05
 ---
 
