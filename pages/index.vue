@@ -1,65 +1,110 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">filipwieland.com-new</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="main-header">
+      <h1>Filip Wieland</h1>
+      <p class="text-blurb">Bad code, bad music, bad electronics, self-deprecation</p>
+      <a href="/contact" class="contact-link">
+        <div>Contact Me</div>
+      </a>
     </div>
+    <link-to-theme href="/code" theme="code">Code</link-to-theme>
+    <link-to-theme href="/music" theme="music">Music</link-to-theme>
+    <link-to-theme href="/projects" theme="projects">Projects</link-to-theme>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import LinkToTheme from '~/components/LinkToTheme.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { LinkToTheme },
+});
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+    @media screen and (max-width: 480px) {
+        width: 100vw;
+    }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+    @media screen and (min-width: 481px) {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+    }
 
-.links {
-  padding-top: 15px;
+    .main-header {
+        position: relative;
+        flex: 1;
+        flex-basis: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        > .text-blurb {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+
+    .link-to-theme {
+        flex: 1;
+        flex-basis: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px;
+    }
+
+    .contact-link {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        color: #fff;
+        background-color: $color-cta;
+        border-radius: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(32px, 32px) rotate(-5deg);
+        bottom: 50%;
+        right: 64px;
+        border: 1px solid $color-cta;
+
+        @media screen and (min-width: 600px) {
+            right: 0;
+        }
+
+        > div {
+            width: 64px;
+            height: 64px;
+            padding: 16px 0;
+        }
+
+        &:link {
+            transition: 0.3s;
+            box-shadow: 0 0 0 0 $color-cta;
+        }
+
+        &:hover {
+            transition: 0.3s;
+            box-shadow: 0 0 0 10px $color-cta;
+            transform: translate(32px, 32px) rotate(-10deg);
+        }
+
+        &:visited {
+            color: #fff;
+        }
+    }
 }
 </style>
