@@ -1,0 +1,18 @@
+$color-bg: #000;
+$color-fg: #fff;
+$color-grey50: #888;
+
+$color-theme-code: #6049FF;
+$color-theme-music: #1A9E11;
+$color-theme-projects: #E05C00;
+$color-cta: #DB28AA;
+
+$fonts-body: Bahnschrift, 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+$fonts-headings: 'Montserrat', Bahnschrift, 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+$fonts-mono: 'Cascadia Code', Inconsolata, 'Source Code Pro', Monaco, Menlo, 'Courier New', Courier, monospace;
+
+$theme-to-color: (
+    "code": $color-theme-code,
+    "music": $color-theme-music,
+    "projects": $color-theme-projects
+);

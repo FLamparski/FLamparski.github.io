@@ -1,0 +1,65 @@
+@import '@/assets/styles/variables';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: $fonts-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: $color-bg;
+    color: $color-fg;
+}
+
+h1, h2, h3, h4, h5, h6, .text-heading {
+    font-family: $fonts-headings;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+html, body, .__nuxt, .__layout {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-cta;
+
+    main & {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: desaturate($color-cta, 30);
+    }
+
+    &:hover, &:visited:hover {
+        color: lighten($color-cta, 20);
+    }
+}
+
+.text-grey {
+    color: $color-grey50;
+}
+
+code, span.text-code, kbd, pre, textarea {
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: $fonts-mono;
+}
+
+main img {
+    max-width: 100%;
+}
