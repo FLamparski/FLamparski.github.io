@@ -63,4 +63,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  generate: {
+    // Generate the site into the "docs" directory as a hack to use GitHub Pages as the host
+    dir: 'docs'
+  },
 }
