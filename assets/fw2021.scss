@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6, .text-heading {
     font-family: $fonts-headings;
     font-weight: 800;
     line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 0.5em;
 }
 
 html, body, .__nuxt, .__layout {
@@ -49,6 +54,12 @@ a {
     color: $color-grey50;
 }
 
-code, span.text-code, kbd, pre {
+code, span.text-code, kbd, pre, textarea {
+    font-size: 14px;
+    line-height: 1.2;
     font-family: $fonts-mono;
+}
+
+main img {
+    max-width: 100%;
 }

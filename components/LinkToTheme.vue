@@ -53,5 +53,9 @@ export default Vue.extend({
             }
         }
     }
+
+    .text-heading {
+        margin-bottom: 0;
+    }
 }
 </style>

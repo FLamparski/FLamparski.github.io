@@ -3,9 +3,9 @@
     <div class="main-header">
       <h1>Filip Wieland</h1>
       <p class="text-blurb">Bad code, bad music, bad electronics, self-deprecation</p>
-      <a href="/contact" class="contact-link">
+      <nuxt-link to="/contact" class="contact-link">
         <div>Contact Me</div>
-      </a>
+      </nuxt-link>
     </div>
     <link-to-theme href="/code" theme="code">Code</link-to-theme>
     <link-to-theme href="/music" theme="music">Music</link-to-theme>
