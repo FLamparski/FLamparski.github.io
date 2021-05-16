@@ -32,7 +32,7 @@ interface Data {
 
 <style lang="scss" scoped>
 .page {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     width: 100%;
     max-width: 640px;
 }
