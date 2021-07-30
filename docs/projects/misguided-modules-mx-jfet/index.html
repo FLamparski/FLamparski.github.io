@@ -1,0 +1,129 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Misguided Modules: Mx JFET - Projects - Filip Wieland</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="filipwieland.com"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="filipwieland.com"><meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="filipwieland.com"><meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="```bash # install dependencies $ npm install"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.5f6a36.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.5f6a36.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.8d173111.json" data-hid="manifest"><link rel="preload" href="/_nuxt/60963d6.js" as="script"><link rel="preload" href="/_nuxt/46dd145.js" as="script"><link rel="preload" href="/_nuxt/6bbb62c.js" as="script"><link rel="preload" href="/_nuxt/dc45cb7.js" as="script"><link rel="preload" href="/_nuxt/b629c88.js" as="script"><link rel="preload" href="/_nuxt/d787a94.js" as="script"><style data-vue-ssr-id="4a42b2dc:0 517a8dd7:0 fa7ff0ca:0 248ac8c2:0 e3941c4a:0 4f95ad5b:0 254b2fa9:0">*,:after,:before{box-sizing:border-box;margin:0}body,html{margin:0;padding:0;font-family:Bahnschrift,"Roboto Condensed",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;font-size:14px;font-weight:400;line-height:1.2;background-color:#000;color:#fff}.text-heading,h1,h2,h3,h4,h5,h6{font-family:Montserrat,Bahnschrift,"Roboto Condensed",-apple-system,BlinkMacSystemFont,"Open Sans","Helvetica Neue",sans-serif;font-weight:800;line-height:1.4;margin-bottom:.5em}ol,p,ul{margin-bottom:.5em}ul{padding-left:16px}.__layout,.__nuxt,body,html{height:100%}a{text-decoration:none;color:#db28aa}main a{text-decoration:underline}a:visited{color:#b54e99}a:hover,a:visited:hover{color:#ea7fcd}.text-grey{color:#888}code,kbd,pre,span.text-code,textarea{font-size:14px;line-height:1.2;font-family:"Cascadia Code",Inconsolata,"Source Code Pro",Monaco,Menlo,"Courier New",Courier,monospace}main img{max-width:100%}code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.layout-projects[data-v-5e315e0e]{background-color:#471d00;height:100vh}.layout-projects .layout-inner[data-v-5e315e0e]{padding:16px;height:calc(100% - 48px);overflow:auto}.navbar[data-v-5875e95e]{display:flex;flex-direction:row;background-color:#000;color:#fff;height:48px;align-items:center}.navbar .link-heading-container[data-v-5875e95e]{flex:3}.navbar .link-heading[data-v-5875e95e]{margin-left:16px;color:#fff}.navbar .link-heading[data-v-5875e95e]:hover,.navbar .link-heading[data-v-5875e95e]:visited{color:#fff}.navbar .link-to-theme[data-v-5875e95e]{flex:1;padding:0 16px;height:100%;display:flex;flex-direction:column;justify-content:center;text-align:center}@media screen and (max-width:400px){.navbar .link-to-theme[data-v-5875e95e]{font-size:12px;padding:0 8px}}.link-to-theme[data-v-fba9cf46]{text-decoration:none;text-transform:uppercase}.link-to-theme.theme-code[data-v-fba9cf46]{background-color:#6049ff;color:#e6e2ff}.link-to-theme.theme-code[data-v-fba9cf46]:link{transition:.3s}.link-to-theme.theme-code.active[data-v-fba9cf46],.link-to-theme.theme-code[data-v-fba9cf46]:hover,.link-to-theme.theme-code[data-v-fba9cf46]:visited:hover{color:#fff;background-color:#1d00e2;box-shadow:inset 0 0 5px 2px rgba(16,0,124,.8);transition:.3s}.link-to-theme.theme-code[data-v-fba9cf46]:visited{color:#e6e2ff}.link-to-theme.theme-music[data-v-fba9cf46]{background-color:#1a9e11;color:#64ed5b}.link-to-theme.theme-music[data-v-fba9cf46]:link{transition:.3s}.link-to-theme.theme-music.active[data-v-fba9cf46],.link-to-theme.theme-music[data-v-fba9cf46]:hover,.link-to-theme.theme-music[data-v-fba9cf46]:visited:hover{color:#fff;background-color:#0b4207;box-shadow:inset 0 0 5px 2px rgba(0,0,0,.8);transition:.3s}.link-to-theme.theme-music[data-v-fba9cf46]:visited{color:#64ed5b}.link-to-theme.theme-projects[data-v-fba9cf46]{background-color:#e05c00;color:#ffb17a}.link-to-theme.theme-projects[data-v-fba9cf46]:link{transition:.3s}.link-to-theme.theme-projects.active[data-v-fba9cf46],.link-to-theme.theme-projects[data-v-fba9cf46]:hover,.link-to-theme.theme-projects[data-v-fba9cf46]:visited:hover{color:#fff;background-color:#7a3200;box-shadow:inset 0 0 5px 2px rgba(20,8,0,.8);transition:.3s}.link-to-theme.theme-projects[data-v-fba9cf46]:visited{color:#ffb17a}.link-to-theme .text-heading[data-v-fba9cf46]{margin-bottom:0}.page[data-v-63ca4eb8]{margin:0 auto 20px;width:100%;max-width:640px}</style><link rel="preload" href="/_nuxt/static/1627675983/projects/misguided-modules-mx-jfet/state.js" as="script"><link rel="preload" href="/_nuxt/static/1627675983/projects/misguided-modules-mx-jfet/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1627675983/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="layout-projects" data-v-5e315e0e><div class="navbar" data-v-5875e95e data-v-5e315e0e><div class="link-heading-container" data-v-5875e95e><a href="/" class="text-heading link-heading nuxt-link-active" data-v-5875e95e>Filip Wieland</a></div> <a href="/code" class="link-to-theme theme-code" data-v-fba9cf46 data-v-5875e95e><span class="text-heading" data-v-fba9cf46>
+        Code
+    </span></a><a href="/music" class="link-to-theme theme-music" data-v-fba9cf46 data-v-5875e95e><span class="text-heading" data-v-fba9cf46>
+        Music
+    </span></a><a href="/projects" class="link-to-theme nuxt-link-active theme-projects active" data-v-fba9cf46 data-v-5875e95e><span class="text-heading" data-v-fba9cf46>
+        Projects
+    </span></a></div> <div class="layout-inner" data-v-5e315e0e><div class="page" data-v-63ca4eb8 data-v-5e315e0e><a href="/projects" class="nuxt-link-active" data-v-63ca4eb8>Projects <span class="text-grey" data-v-63ca4eb8>/</span></a> <h1 data-v-63ca4eb8>Misguided Modules: Mx JFET</h1> <main data-v-63ca4eb8><div class="nuxt-content" data-v-63ca4eb8 data-v-63ca4eb8><p data-v-63ca4eb8 data-v-63ca4eb8><strong data-v-63ca4eb8 data-v-63ca4eb8>Misguided Modules</strong> is the name of my project to learn more about electronics, especially in
+the analogue domain, and in particular applied to music production, while making potentially
+marketable Eurorack modules.</p>
+<a href="/_nuxt/img/insitu.3638030.jpg" data-v-63ca4eb8><img alt="Mx JFET mounted in my modular system" src="/_nuxt/img/insitu.3638030.jpg"></a>
+<h2 id="demo" data-v-63ca4eb8 data-v-63ca4eb8><a href="#demo" aria-hidden="true" tabindex="-1" data-v-63ca4eb8 data-v-63ca4eb8><span class="icon icon-link" data-v-63ca4eb8 data-v-63ca4eb8></span></a>Demo</h2>
+<ul data-v-63ca4eb8 data-v-63ca4eb8>
+<li data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.tiktok.com/@filipwieland/video/6990437999586626821" rel="nofollow noopener noreferrer" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8><strong data-v-63ca4eb8 data-v-63ca4eb8>Demo 1</strong> (TikTok)</a> - using a sequence from <a href="/music/ABYSS" data-v-63ca4eb8>Abyss</a>, in a fairly tame configuration</li>
+<li data-v-63ca4eb8 data-v-63ca4eb8><a href="https://youtu.be/O_m5g9EF4lQ" rel="nofollow noopener noreferrer" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8><strong data-v-63ca4eb8 data-v-63ca4eb8>Demo 2</strong> (YouTube)</a> - using the bassline from Hysteria by Muse, with the resonance
+turned way past what's reasonable</li>
+</ul>
+<p data-v-63ca4eb8 data-v-63ca4eb8>In both patches, I'm using Maths as the envelope generator and two <a href="/projects/misguided-modules-ssi2131" data-v-63ca4eb8>Misguided VCO</a>
+going through Mx JFET. Unlike the demos for that module, I am also using a proper VCA for
+articulation this time. The Hysteria demo also runs the output through a digital delay effect.</p>
+<h2 id="the-module" data-v-63ca4eb8 data-v-63ca4eb8><a href="#the-module" aria-hidden="true" tabindex="-1" data-v-63ca4eb8 data-v-63ca4eb8><span class="icon icon-link" data-v-63ca4eb8 data-v-63ca4eb8></span></a>The module</h2>
+<p data-v-63ca4eb8 data-v-63ca4eb8><strong data-v-63ca4eb8 data-v-63ca4eb8>Mx JFET</strong> is a low-pass filter with 2- and 4-pole outputs that uses the MMBFJ310L JFET as its
+variable gain element. It implements both the classic Moog-style inverting feedback path,
+as well as a more spicy MS20-style Sallen-Key configuration. These can be switched on the fly
+through the front panel toggle.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>There's also an attenuverter on the CV input for, well, attenuating and inverting the control
+signal. This is useful if you're running this off the same envelope generator but want to
+attenuate the filter envelope.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>The inverting feedback mode is fine - it suffers from the usual problem of high resonance swamping
+out the input signal, but at more sensible settings it sounds good especially on the 4 pole output.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>Where the fun starts is when you flick the switch to the SKB mode, for Sallen-Key-Bach. Much higher
+resonance levels become practical, and the sound gets much dirtier and in my opinion more
+interesting. I, uh, got inspired by <a href="https://www.youtube.com/playlist?list=PLOunECWxELQS5bMdWo9VhmZtsCjhjYNcV" rel="nofollow noopener noreferrer" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Aaron Lanterman's lectures</a> on filter design
+in general and when I saw the <a href="https://www.youtube.com/watch?v=beQLUA0BQP4" rel="nofollow noopener noreferrer" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>lecture on Sallen-Key filters</a>, I decided to
+incorporate it into Mx JFET immediately. And it turns out that it's fairly easy to switch between
+SKB mode and Inverting mode:</p>
+<a href="/_nuxt/img/switch.59b048d.png" data-v-63ca4eb8><img alt="Schematic fragment showing how Mx JFET switches between inverting and SKB feedback modes" src="/_nuxt/img/switch.59b048d.png"></a>
+<p data-v-63ca4eb8 data-v-63ca4eb8>It's just a double pole, double throw switch. In the inverting position, the first capacitor (C1) is
+grounded, while the feedback is routed to the inverting input of U2A. In the SKB position, feedback
+is disconnected from U2A and instead it's connected to the normally grounded side of C1.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>I think some of the distorted nature of this filter comes from driving the JFETs in a weird way.
+The particular transistors I'm using are not meant for audio use and I need to use some oddball
+gate voltages to give them the right behaviour. What I imagine is happening is that it's easy for
+the cutoff knob to go "past" fully open and into a state where the JFETs saturate more easily,
+especially if the input is quite hot. To control this behaviour a bit, the module has two tuning
+pots, which together control the effective range of the cutoff knob.</p>
+<h2 id="design-for-manufacture" data-v-63ca4eb8 data-v-63ca4eb8><a href="#design-for-manufacture" aria-hidden="true" tabindex="-1" data-v-63ca4eb8 data-v-63ca4eb8><span class="icon icon-link" data-v-63ca4eb8 data-v-63ca4eb8></span></a>Design for manufacture</h2>
+<a href="/_nuxt/img/boardscloseup.b416b20.jpg" data-v-63ca4eb8><img alt="Mx JFET boards close-up shot" src="/_nuxt/img/boardscloseup.b416b20.jpg"></a>
+<p data-v-63ca4eb8 data-v-63ca4eb8>Mx JFET is heavy on SMD components, but all SMD components are populated by my PCB supplier, JLCPCB.
+There is a handful of components that you need to hand solder yourself (see the BOM below).
+The panel is made using the same process as the PCB and so overall the design is pretty cheap:
+I could sell a PCB and panel set for £20 and get a fair margin.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>Assembly will take about 40 minutes of soldering/build and maybe 5-10 minutes of tuning.</p>
+<p data-v-63ca4eb8 data-v-63ca4eb8>Most components have fairly obvious placement and orientation. Where you'll need to take care is
+the trim pots - make sure the screws are towards the sockets and away from the control pots. This is
+so that they poke through the holes in the panel.
+I will try to come up with a better build document ahead of a larger scale production run.</p>
+<h2 id="bom" data-v-63ca4eb8 data-v-63ca4eb8><a href="#bom" aria-hidden="true" tabindex="-1" data-v-63ca4eb8 data-v-63ca4eb8><span class="icon icon-link" data-v-63ca4eb8 data-v-63ca4eb8></span></a>BOM</h2>
+<table data-v-63ca4eb8 data-v-63ca4eb8>
+    <tbody data-v-63ca4eb8 data-v-63ca4eb8><tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <th scope="col" data-v-63ca4eb8 data-v-63ca4eb8>#</th>
+        <th scope="col" data-v-63ca4eb8 data-v-63ca4eb8>Item</th>
+        <th scope="col" data-v-63ca4eb8 data-v-63ca4eb8>Qty</th>
+        <th scope="col" data-v-63ca4eb8 data-v-63ca4eb8>Source</th>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>RV1</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>Linear 100k centre detent pot</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>1</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.thonk.co.uk/shop/ttpots/" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Thonk</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>RV2, RV3</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>Linear 100k pot</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>2</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.thonk.co.uk/shop/ttpots/" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Thonk</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>RV4, RV5</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>20k/25k trimmer</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>2</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.thonk.co.uk/shop/25-turn-trimmer-potentiometer/" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Thonk</a> | <a href="https://www.rapidonline.com/suntan-tsr-3296w-203r-20k-wr3296w-10-3-8-cermet-trimmer-pot-68-1947" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Rapid</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>C6, C7</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>470nF film capacitor</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>2</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.rapidonline.com/kemet-r82dc3470aa60k-470nf-10-63v-5mm-polyester-box-capacitor-10-3268" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Rapid</a> | <a href="https://www.ebay.co.uk/itm/263756115737" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Ebay</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>C1, C2, C3, C4</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>220nF film capacitor</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>4</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.rapidonline.com/kemet-r82dc3220aa60k-220nf-10-63v-5mm-polyester-box-capacitor-10-3264" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Rapid</a> | <a href="https://www.ebay.co.uk/itm/263756115737" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Ebay</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>J1, J2, J4, J5</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>Thonkiconn 3.5mm socket (PJ398SM) + nut (hex or knurled; washer not required)</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>4</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.thonk.co.uk/shop/3-5mm-jacks/" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Thonk</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>J3</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>Power connector - <em data-v-63ca4eb8 data-v-63ca4eb8>design assumes a keyed connector so no polarity protection!</em></td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>1</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.rapidonline.com/bkl-10120554-straight-pin-header-2-x-5-for-pcb-mounting-2-54-without-ejector-50-9968" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Rapid</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>SW1</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>DPDT ON-ON Switch</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>1</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.thonk.co.uk/shop/sub-mini-toggle-switches/" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Thonk</a></td>
+    </tr>
+    <tr data-v-63ca4eb8 data-v-63ca4eb8>
+        <td data-v-63ca4eb8 data-v-63ca4eb8></td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>M2x10 standoff, M2 nut, M2 screw</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8>2</td>
+        <td data-v-63ca4eb8 data-v-63ca4eb8><a href="https://www.ebay.co.uk/itm/302809868773" target="_blank" data-v-63ca4eb8 data-v-63ca4eb8>Ebay</a> - I recommend just getting a kit like this one</td>
+    </tr>
+</tbody></table>
+<h2 id="schematic" data-v-63ca4eb8 data-v-63ca4eb8><a href="#schematic" aria-hidden="true" tabindex="-1" data-v-63ca4eb8 data-v-63ca4eb8><span class="icon icon-link" data-v-63ca4eb8 data-v-63ca4eb8></span></a>Schematic</h2>
+<a href="/_nuxt/img/schematic.90f3682.png" data-v-63ca4eb8><img alt="Full schematic" src="/_nuxt/img/schematic.90f3682.png"></a></div></main></div></div></div></div></div><script defer src="/_nuxt/static/1627675983/projects/misguided-modules-mx-jfet/state.js"></script><script src="/_nuxt/60963d6.js" defer></script><script src="/_nuxt/b629c88.js" defer></script><script src="/_nuxt/d787a94.js" defer></script><script src="/_nuxt/46dd145.js" defer></script><script src="/_nuxt/6bbb62c.js" defer></script><script src="/_nuxt/dc45cb7.js" defer></script>
+  </body>
+</html>
