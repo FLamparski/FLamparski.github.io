@@ -67,3 +67,25 @@ code, span.text-code, kbd, pre, textarea {
 main img {
     max-width: 100%;
 }
+
+.nuxt-content {
+    blockquote {
+        border-left: 2px solid $color-grey50;
+        padding-left: 1em;
+    }
+
+    .pullout {
+        float: right;
+        max-width: 250px;
+        margin-left: 1em;
+
+        >img {
+            display: block;
+        }
+
+        >img + .caption {
+            margin-top: 4px;
+            font-style: italic;
+        }
+    }
+}
